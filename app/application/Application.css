@@ -1,0 +1,73 @@
+/* Hero Section Styling */
+.hero-section4 {
+  background-image: 
+      linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+      url('../images/application.png'); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;  
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -30px; /* Consider using padding on the parent container instead */
+  z-index: -1; /* Be cautious with negative z-index */
+}
+
+/* Main Container */
+.treatment-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+  gap: 20px; /* gap property works only if you use flexbox or grid */
+}
+
+/* Individual Card Styling */
+.treatment-card {
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Number Styling */
+.treatment-card h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+.treatment-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.treatment-card h3 {
+  font-size: 1.5rem;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Text Styling */
+.treatment-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .treatment-card {
+      width: 100%;
+  }
+}

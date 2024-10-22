@@ -1,0 +1,90 @@
+/* Footer Container Styles */
+.footer {
+    background-color: #ccc;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer Left Section Styles */
+  
+  .footer-company-title {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  
+  .footer-tagline {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Footer Right Section Styles */
+  .footer-right-section {
+    flex: 1;
+  }
+  
+  .footer-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  /* Divider Lines */
+  .line {
+    width: 1px;
+    height: 1.5rem;
+    background-color: black;
+    margin: 0 20px;
+  }
+  
+  .line2 {
+    width: 1px;
+    height: 8.5rem;
+    background-color: black;
+    margin: 0 20px;
+  }
+  
+  /* Local Section */
+  .local {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Social Icons */
+  .footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .footer-social-icon {
+    width: 30px; /* Set the width of the icons */
+    height: 30px; /* Set the height of the icons */
+    object-fit: contain; /* Ensures that the aspect ratio of the icons is maintained */
+    cursor: pointer; /* Adds a pointer cursor when hovering */
+  }
+  
+  .footer-social-icon:hover {
+    opacity: 0.7; /* Adds a hover effect */
+  }
+  
+  /* Footer Copyright Section */
+  

@@ -1,0 +1,87 @@
+.hero-sectionn {
+    background-image: 
+    linear-gradient(to  left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+      url('../images/aboutimag.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top:-30px;
+    z-index: -1;
+  }
+
+  .vision-mission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .vision-section{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 40px;
+  }
+  .mission-section{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    gap: 40px;
+  }
+  .extra-section{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    gap: 40px;
+  }
+  
+  .section-image {
+    width: 20rem;
+    height: auto;
+  }
+  .loc h1{
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: underline;
+  }
+  .loc h2{
+    font-size: 2rem;
+  }
+  .loc h3{
+    font-size: 3rem;
+  }
+  .hero-title{
+    text-align: start;
+  }
+  
+  .section-text {
+    width: 55%;
+  }
+  
+  .section-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .section-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+ 
+  
+  .extra-section {
+    margin-top: 40px;
+  }
+  
+  .extra-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  
