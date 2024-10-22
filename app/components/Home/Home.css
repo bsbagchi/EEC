@@ -1,0 +1,161 @@
+HomePage.css
+.homepage-container {
+  font-family: Arial, sans-serif;
+ 
+  z-index: -1;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: 
+  linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%),
+    url('../../images/home/image 1.png'); /* Replace with actual image URL */
+    box-shadow: 0px 4px 4px 0px #00000040;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top:-30px;
+  z-index: -1;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 45rem;
+  height: 28rem;
+   margin: 4rem;
+   border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-align: start;
+  font-weight: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.get-started-btn {
+  color: #fff; /* Text color */
+  background-color: transparent; /* Button background */
+  border: 2px solid #fff; /* Solid border with white color */
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  border-radius: 6px;
+   display: flex;
+   align-self:flex-start;
+   font-size: 1.6rem;
+   font-weight: 100;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.get-started-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  /* padding: 10px; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-left h3{
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1px;
+}
+
+.about-content {
+  display: flex;
+  /* justify-content: space-around; */
+  /* gap: 20px; */
+  align-items: flex-start;
+  
+align-items: center;
+}
+
+.about-left {
+  flex: 1;
+  text-align: start;
+
+}
+.about_line{
+ border-bottom: 1px solid black; 
+}
+.about-right h4{
+  font-size: 1.8rem;
+}
+.about-right p {
+  /* margin-bottom: 60px; */
+  font-family: 'Arial', sans-serif; /* Set font family */
+  font-size: 16px; /* Set font size */
+  font-weight: normal; /* Set font weight (bold, normal, etc.) */
+  color: #333; /* Set text color */
+  line-height: 1.6; /* Set line spacing */
+  text-align: justify; /* Align text (left, right, center, justify) */
+  text-transform: none; /* Control capitalization (uppercase, lowercase, capitalize) */
+  letter-spacing: 0.05em; /* Set letter spacing */
+  word-spacing: 0.1em; /* Set word spacing */
+  text-decoration: none; /* Add or remove underline, overline, strikethrough */
+}
+
+.about-image {
+  width:80% ;
+  height:auto;
+  border-radius: 5px;
+}
+
+
+
+
+
+.learn-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}
+
+  .bnnerr {
+    background-image: 
+
+      url('../../images/contact.jpeg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+  }
+  
+
+/* Responsive Styles */
+

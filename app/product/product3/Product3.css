@@ -1,0 +1,13 @@
+.hero-sectionz {
+    background-image: 
+    linear-gradient(to  left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url('../../images/pro3.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top:-30px;
+    z-index: -1;
+  }

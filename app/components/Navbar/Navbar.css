@@ -1,0 +1,136 @@
+
+
+
+
+.location img, .contact-info img {
+    width: 1rem;
+    height: auto;
+}
+
+.logo-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    height: 50px;
+}
+
+.quote-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.quote-btn:hover {
+    background-color: #333;
+}
+
+.main-nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px ;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5); /* White drop shadow */
+}
+
+
+
+
+.main-nav ul li {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-nav ul li:hover .dropdown {
+    display: block; /* Make the dropdown visible on hover */
+}
+
+
+/* Hide the dropdown initially */
+.dropdown {
+    display: none !important;  /* Ensure it's hidden */
+    position: absolute;
+    background-color: #555;
+    top: 100%; /* Position below the main menu item */
+    left: 0;
+    padding: 10px;
+    z-index: 3;
+    flex-direction: column; /* Arrange items in a column */
+    min-width: 150px; /* Ensure proper width for dropdown */
+    border-radius: 5px;
+  }
+  
+  /* On hover, display the dropdown */
+  .logogo:hover .dropdown {
+    display: flex !important; /* Make the dropdown visible on hover */
+  }
+  
+  /* Other styling for the dropdown items */
+  .dropdown li {
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+ 
+  .logogo{
+ 
+ 
+    align-items: center;
+  }
+
+  
+  /* Change background color of dropdown items on hover */
+  .dropdown li:hover {
+    background-color: #777;
+  }
+  
+  @media (max-width: 1230px) {
+    .main-nav {
+        display: none; /* Hide by default */
+        flex-direction: column; /* Stack items */
+    }
+    
+    
+
+    .mobile-menu-btn {
+        display: block; /* Show mobile button */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Stack items in mobile view */
+        width: 100%; /* Full width */
+    }
+
+    .main-nav ul li {
+        padding: 10px; /* Larger touch targets */
+        width: 100%; /* Full width for mobile items */
+    }
+
+    .dropdown {
+        position: static; /* Dropdown will show below on mobile */
+        display: none; /* Hidden by default */
+    }
+
+    .logogo:hover .dropdown {
+        display: block; /* Show on hover in mobile view */
+    }
+}
+
