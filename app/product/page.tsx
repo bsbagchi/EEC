@@ -40,13 +40,17 @@ function Product() {
      <section className="max-sm:h-[24.5rem] md:h-[50rem] relative">
         <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[50rem]  -top-24 -z-10' src={ban} alt='banner'/>
         <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
+        <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[8px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[67px] h-[18px] text-white'>Get a Quote&gt;</Link>
         </div>
         <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
-          <h1 className='max-sm:pt-2  leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
-          <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[30rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">EstellaEcoCarbon</h1>
-          <p  className="max-sm:text-[10px] md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
+          <h1 className='max-sm:pt-4  leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px]  text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
+          <h1 className="max-sm:hidden block md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px]  md:w-[25rem] lg:w-[30rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
+          <h1 className="max-sm:block hidden w-[213px] max-sm:py-2 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px]   poppins font-[500]  ">Welcome to EstellaEcoCarbon</h1>
+          <p  className="max-sm:hidden block md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           We offer a wide array of activated carbon products tailored to meet the specific needs of our clients. Whether it&apos;s purifying water, improving air quality, or ensuring the safety of food and beverages, our products deliver exceptional performance and reliability.
           </p>
+          <p className='hidden max-sm:block  leading-[18.35px] text-[10px] montserrat font-[400]'>We offer a wide array of activated carbon products tailored to meet the specific needs of our clients. </p>
+          
           {/* <button className="w-[316px] h-[67px] max-sm:m-2 max-sm:h-[20px] max-sm:w-[101px] max-sm:text-[10px] mt-7 rounded-[0.5rem]  border-2 border-white montserrat font-[400] text-[2rem]">Get Started</button> */}
         </div>
       </section>

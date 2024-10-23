@@ -9,6 +9,7 @@ import fo from '../images/fo.png'
 import ban from '../images/about/about.png';
 import Image from 'next/image'
 import Quote from '../components/Home/Quote';
+import Link from 'next/link';
 
 
 function About() {
@@ -18,11 +19,13 @@ function About() {
       <section className="max-sm:h-[24.5rem] md:h-[50rem] relative">
         <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[50rem]  -top-24 -z-10' src={ban} alt='banner'/>
         <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
+        <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[8px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[67px] h-[18px] text-white'>Get a Quote&gt;</Link>
+        
         </div>
         <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
-          <h1 className='max-sm:pt-8 leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:pb-3 md:text-5xl font-[600]'>About Us</h1>
-          <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[30rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">Welcome to EstellaEcoCarbon</h1>
-          <p  className="max-sm:text-[10px] md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
+          <h1 className='max-sm:pt-3 leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px] text-[2.5rem] poppins md:pb-3 md:text-5xl font-[600]'>About Us</h1>
+          <h1 className="max-sm:leading-[17.28px] md:leading-tight lg:leading-[80.66px] max-sm:py-2 lg:mb-[20px] max-sm:text-[12px] md:w-[25rem] lg:w-[30rem] text-[#D1D1D1] poppins font-[500] md:text-5xl lg:text-[56px] ">Welcome to EstellaEcoCarbon</h1>
+          <p  className="max-sm:text-[10px] max-sm:leading-[18.35px]  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           We are committed to delivering high-quality, sustainable activated carbon solutions to a diverse range of industries.
           </p>
           {/* <button className="w-[316px] h-[67px] max-sm:m-2 max-sm:h-[20px] max-sm:w-[101px] max-sm:text-[10px] mt-7 rounded-[0.5rem]  border-2 border-white montserrat font-[400] text-[2rem]">Get Started</button> */}

@@ -6,19 +6,23 @@ import img2 from '../../images/product1/img2.svg';
 import img3 from '../../images/product1/img3.svg';
 import ban from '../../images/pro1.png';
 import Enquiry from '@/app/components/product/Enquiry';
+import Link from 'next/link';
 function Product1() {
   return (
     <div>
      <section className="max-sm:h-[24.5rem] md:h-[50rem] relative">
         <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[50rem]  -top-24 -z-10' src={ban} alt='banner'/>
         <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
+        <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[8px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[67px] h-[18px] text-white'>Get a Quote&gt;</Link>
+        
         </div>
         <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
-          <h1 className='max-sm:pt-2  leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
-          <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[60rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">GRANULAR ACTIVATED CARBON</h1>
-          <p  className="max-sm:text-[10px] md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
+          <h1 className='max-sm:pt-4 max-sm:leading-[17.28px] leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
+          <h1 className=" max-sm:py-1 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px] md:w-[25rem] lg:w-[60rem]  poppins font-[500] md:text-5xl lg:text-[56px] ">GRANULAR ACTIVATED CARBON</h1>
+          <p  className=" block max-sm:hidden md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           Carbons’ granular Coconut Shell Activated Carbon products are used across a wide range of applications. Various mesh sizes and activity levels are employed in both liquid and gas applications. EE Carbon has extensive Research and Development facilities.
           </p>
+          <p className='max-sm:block hidden leading-[18.35px] montserrat font-normal max-sm:text-[10px] '>Carbons’ granular Coconut Shell Activated Carbon products are used across a wide range of applications. </p>
           {/* <button className="w-[316px] h-[67px] max-sm:m-2 max-sm:h-[20px] max-sm:w-[101px] max-sm:text-[10px] mt-7 rounded-[0.5rem]  border-2 border-white montserrat font-[400] text-[2rem]">Get Started</button> */}
         </div>
       </section>
