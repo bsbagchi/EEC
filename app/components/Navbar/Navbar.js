@@ -48,7 +48,7 @@ const Navbar = () => {
 
       <nav className="main-nav w-[64%] ">
         <ul style={{lineHeight:'28.81px'}} className=" flex poppins font-[400px] text-[20px] px-[4%] w-full justify-between ">
-          <li><Link href="/">HOME</Link></li>
+          <li><Link  href="/">HOME</Link></li>
           <li><Link href="/about">ABOUT US</Link></li>
           <li className="logogo" > {/*<li className="logogo" onClick={toggleDropdown}> */}
             <Link className="flex items-center" href='/product'><h1>PRODUCTS</h1>
@@ -79,26 +79,26 @@ const Navbar = () => {
               
                 <div>
               <ul style={{lineHeight:'28.81px'}} className="bg-black  text-white  poppins font-[400px] text-[12px] px-[7%] w-full justify-between ">
-          <li className="pt-4 "><Link href="/">HOME</Link></li>
-          <li className="my-2"><Link href="/about">ABOUT US</Link></li>
+          <li className="pt-4 "><Link onClick={toggleDrawer} href="/">HOME</Link></li>
+          <li className="my-2"><Link onClick={toggleDrawer} href="/about">ABOUT US</Link></li>
           <li className="logogo my-2" > {/*<li className="logogo" onClick={toggleDropdown}> */}
-            <Link className="flex items-center" href='/product'><h1>PRODUCTS</h1>
+            <Link onClick={toggleDrawer} className="flex items-center" href='/product'><h1>PRODUCTS</h1>
             <div className="h-[13px] p-1"><Image className="" src={arr} alt="arrow" width={10} height={10} /></div></Link>
            
             
            
             <ul className="dropdown montserrat font-normal text-[10px]">
-                <li className=''><Link href="/product/product1">Granular Activted Carbon</Link></li>
-                <li className=''><Link href="/product/product2">Powder Activted Carbon</Link></li>
-                <li className=''><Link href="/product/product3">Pelletized Activted Carbon</Link></li>
+                <li className=''><Link onClick={toggleDrawer} href="/product/product1">Granular Activted Carbon</Link></li>
+                <li className=''><Link onClick={toggleDrawer} href="/product/product2">Powder Activted Carbon</Link></li>
+                <li className=''><Link onClick={toggleDrawer} href="/product/product3">Pelletized Activted Carbon</Link></li>
               </ul>
           </li>
-          <li className="my-2"><Link href="/activated">ACTIVATED CARBON</Link></li>
+          <li className="my-2"><Link onClick={toggleDrawer} href="/activated">ACTIVATED CARBON</Link></li>
           <li className="my-2">
-            <Link className="flex items-center" href="/application"><h1>APPLICATIONS</h1> </Link>
+            <Link onClick={toggleDrawer} className="flex items-center" href="/application"><h1>APPLICATIONS</h1> </Link>
           </li>
-          <li className="my-2"><Link href="/service">SERVICES</Link></li>
-          <li className="my-2"><Link href="/contact">CONTACT US</Link></li>
+          <li className="my-2"><Link onClick={toggleDrawer} href="/service">SERVICES</Link></li>
+          <li className="my-2"><Link onClick={toggleDrawer} href="/contact">CONTACT US</Link></li>
         </ul></div>
         </div>
             </Drawer>
