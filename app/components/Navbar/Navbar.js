@@ -82,7 +82,7 @@ const Navbar = () => {
           <li className="pt-4 "><Link onClick={toggleDrawer} href="/">HOME</Link></li>
           <li className="my-2"><Link onClick={toggleDrawer} href="/about">ABOUT US</Link></li>
           <li className="logogo my-2" > {/*<li className="logogo" onClick={toggleDropdown}> */}
-            <Link onClick={toggleDrawer} className="flex items-center" href='/product'><h1>PRODUCTS</h1>
+            <Link  className="flex items-center" href='/product'><h1>PRODUCTS</h1>
             <div className="h-[13px] p-1"><Image className="" src={arr} alt="arrow" width={10} height={10} /></div></Link>
            
             
