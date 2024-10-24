@@ -47,7 +47,7 @@ const Homepage = () => {
 
         </div>
         <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
-          <h1 className="max-sm:w-[231px] max-sm:pr-10 max-sm:pt-2 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px]  poppins font-[600] md:text-5xl lg:text-[56px] ">Pioneering Sustainable Activated Carbon Solutions</h1>
+          <h1 className="max-sm:w-[231px] max-sm:pr-10 max-sm:pt-2 md:leading-tight  lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px]  max-sm:leading-[17.28px]  poppins font-[600] md:text-5xl lg:text-[56px] ">Pioneering Sustainable Activated Carbon Solutions</h1>
           <p  className="max-sm:text-[10px] max-sm:pt-1 max-sm:leading-[18.35px] text-justify md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
             Discover high-quality, eco-friendly activated carbon products crafted for a sustainable future. 
             Join us in making a positive impact.
@@ -71,7 +71,7 @@ const Homepage = () => {
             <Image 
               src={aboutus} 
               alt="Factory Image" 
-              className="lg:h-[520px]"
+              className="lg:w-[550px]"
             />
           </div>
 

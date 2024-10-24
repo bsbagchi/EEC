@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-[--footer-bg]">
       <div className="w-full lg:flex justify-between py-5 px-3 md:px-8 lg:px-24">
         {/* Left Side - Company Info */}
-        <div className="max-sm:flex">
+        <div className="max-sm:flex pr-2">
           <div>
           <h2  className="lg:leading-[88.03px] max-sm:leading-[22.02px] max-sm:text-[12px] montserrat font-[600] text-[48px]">EstellaEcoCarbon</h2>
           <p  className="lg:leading-[44.04px] max-sm:leading-[18.35px] max-sm:text-[10px] montserrat font-[300] text-[24px]">Pioneering Sustainable Activated Carbon Solutions</p>

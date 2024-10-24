@@ -45,7 +45,7 @@ function Product() {
         </div>
         <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-4  leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px]  text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
-          <h1 className="max-sm:hidden block md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px]  md:w-[25rem] lg:w-[30rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
+          <h1 className="max-sm:hidden block md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px]  md:w-[25rem] lg:w-[40rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
           <h1 className="max-sm:block hidden w-[213px] max-sm:py-2 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px]   poppins font-[500]  ">Welcome to EstellaEcoCarbon</h1>
           <p  className="max-sm:hidden block md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           We offer a wide array of activated carbon products tailored to meet the specific needs of our clients. Whether it&apos;s purifying water, improving air quality, or ensuring the safety of food and beverages, our products deliver exceptional performance and reliability.
