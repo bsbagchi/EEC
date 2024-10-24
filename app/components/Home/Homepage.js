@@ -60,7 +60,7 @@ const Homepage = () => {
       <section className="">
        
 
-        <div className="   md:px-20 lg:px-[10 %]  justify-items-center px-2">
+        <div className="   md:px-20 lg:px-[10%]  justify-items-center px-2">
           <div  className='justify-items-start w-full pb-5'>
             <h2 style={{lineHeight:'51.85px'}} className="poppins font-[400] text-[36px] ">Welcome To EstellaEcoCarbon</h2>
           <h3 style={{lineHeight:'54.73px'}} className='poppins font-[600] text-[38px]'>About Us</h3>
@@ -84,7 +84,7 @@ const Homepage = () => {
             <div className='w-full h-[1px] bg-black my-3'/>
 
             <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Industry Solutions</h4>
-            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-8 text-[1.25rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
+            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-7 text-[1.25rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
 
             <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins font-[400] text-[2.25rem]'>Quality Standards</h4>
             <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] text-[1.25rem]'>EE Carbon Strives To Retain Customers By Providing Quality Products Consistently.</p>
