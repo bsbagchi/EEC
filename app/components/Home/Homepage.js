@@ -81,15 +81,15 @@ const Homepage = () => {
             EstellaEcoCarbon is your trusted partner in the manufacturing of high-quality activated carbon. Specializing in sustainable and efficient solutions, we serve various industries including water treatment, air purification, and food processing. Our products are derived from eco-friendly sources like coconut shells and wood, ensuring that our environmental footprint remains minimal while delivering maximum performance.
 
             </p>
-            <div className='w-full h-[1px] bg-black my-5'/>
+            <div className='w-full h-[1px] bg-black my-3'/>
 
-            <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-5 font-[400] text-[2.25rem]'>Industry Solutions</h4>
-            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-10 text-[1.25rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
+            <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Industry Solutions</h4>
+            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-8 text-[1.25rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
 
             <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins font-[400] text-[2.25rem]'>Quality Standards</h4>
             <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] text-[1.25rem]'>EE Carbon Strives To Retain Customers By Providing Quality Products Consistently.</p>
 
-            <Link style={{lineHeight:"1.4rem"}} href="about" className="underline poppins font-[600] text-[16px] py-10 flex"><h1>Learn More</h1> <span  className='h-13 '><Image width={10} height={10} src={arr} alt='arrow'/></span></Link>
+            <Link style={{lineHeight:"1.4rem"}} href="about" className="underline poppins font-[600] text-[16px] py-8 flex"><h1>Learn More</h1> <span  className='h-13 '><Image width={10} height={10} src={arr} alt='arrow'/></span></Link>
           </div>
           </div>
           
