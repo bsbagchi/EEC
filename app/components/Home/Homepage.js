@@ -60,7 +60,7 @@ const Homepage = () => {
       <section className="">
        
 
-        <div className="   md:px-20 lg:px-[10%]  justify-items-center px-2">
+        <div  className="   md:px-20 lg:px-[10%]  justify-items-center px-2">
           <div  className='justify-items-start w-full pb-5'>
             <h2 style={{lineHeight:'51.85px'}} className="poppins font-[400] text-[36px] ">Welcome To EstellaEcoCarbon</h2>
           <h3 style={{lineHeight:'54.73px'}} className='poppins font-[600] text-[38px]'>About Us</h3>
@@ -71,11 +71,11 @@ const Homepage = () => {
             <Image 
               src={aboutus} 
               alt="Factory Image" 
-              className="lg:w-[550px]"
+              className="lg:w-[640px]"
             />
           </div>
 
-          <div className="lg:w-[60%] sm:pt-5 md:pt-10 lg:pl-12">
+          <div className="lg:w-[60%] sm:pt-5 lg:pl-10">
             
             <p style={{lineHeight:'36px.7'}} className=' text-justify montserrat font-[400] text-[1.25rem]'>
             EstellaEcoCarbon is your trusted partner in the manufacturing of high-quality activated carbon. Specializing in sustainable and efficient solutions, we serve various industries including water treatment, air purification, and food processing. Our products are derived from eco-friendly sources like coconut shells and wood, ensuring that our environmental footprint remains minimal while delivering maximum performance.
