@@ -60,12 +60,12 @@ const Homepage = () => {
       <section className="">
        
 
-        <div className="   md:px-20 lg:px-44 justify-items-center px-2">
+        <div className="   md:px-20 lg:px-[10 %]  justify-items-center px-2">
           <div  className='justify-items-start w-full pb-5'>
             <h2 style={{lineHeight:'51.85px'}} className="poppins font-[400] text-[36px] ">Welcome To EstellaEcoCarbon</h2>
           <h3 style={{lineHeight:'54.73px'}} className='poppins font-[600] text-[38px]'>About Us</h3>
           </div>
-          <div className='lg:flex items-center'>
+          <div className='lg:flex justify-center items-center'>
             <div className=" ">
           
             <Image 
