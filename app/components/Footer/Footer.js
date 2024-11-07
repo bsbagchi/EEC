@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css'; // Import the external CSS
-import inst from '../../images/instram.png';  // Instagram icon image
-import face from '../../images/face.png';     // Facebook icon image
-import x from '../../images/x.png';           // X (formerly Twitter) icon image
-import link from '../../images/link.png';     // LinkedIn icon image
-import Image from 'next/image';
+// import inst from '../../images/instram.png';  // Instagram icon image
+// import face from '../../images/face.png';     // Facebook icon image
+// import x from '../../images/x.png';           // X (formerly Twitter) icon image
+// import link from '../../images/link.png';     // LinkedIn icon image
+// import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -21,12 +21,12 @@ const Footer = () => {
           <div className='flex leading-[44.04px] max-sm:leading-[18.35px] max-sm:text-[10px] montserrat text-[24px]'><h1  className=' font-[600]  '>Email:</h1> <h1  className=' font-[400] px-2 '>info@example.com</h1></div>
           </div>
           {/* Social Icons */}
-          <div className="h-[40px] max-sm:w-full lg:h-[83px] lg:w-[339px] mt-4 flex">
+          {/* <div className="h-[40px] max-sm:w-full lg:h-[83px] lg:w-[339px] mt-4 flex">
             <Link href="#"><Image src={inst}  className="w-fit h-fit" alt="Instagram" /></Link>
             <Link href="#"><Image src={face} className="w-fit h-fit max-sm:py-1 md:py-2 "  alt="Facebook" /></Link>
             <Link href="#"><Image src={x} className=" w-fit h-fit md:py-3 max-sm:pt-[4px] max-sm:mx-[2px] md:mx-3" alt="X" /></Link>
             <Link href="#"><Image src={link} className="w-fit h-fit max-sm:pt-[1px] max-sm:ml-[2px] " alt="LinkedIn" /></Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Side - Links */}

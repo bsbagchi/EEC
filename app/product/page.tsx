@@ -37,13 +37,13 @@ function Product() {
   ];
   return (
     <div>
-     <section className="max-sm:h-[24.5rem] md:h-[50rem] relative">
-        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[50rem]  -top-24 -z-10' src={ban} alt='banner'/>
-        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
+     <section className="max-sm:h-[24.5rem] md:h-[40rem] relative">
+        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[40rem]  -top-24 -z-10' src={ban} alt='banner'/>
+        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[40rem] absolute opacity-90 -top-24'></div>
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[12px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[100px] h-[30px] text-white'>Get a Quote&gt;</Link>
         
         </div>
-        <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px] relative -bottom-2 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-4  leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px]  text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
           <h1 className="max-sm:hidden block md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px]  md:w-[25rem] lg:w-[40rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
           <h1 className="max-sm:block hidden w-[213px] max-sm:py-2 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px]   poppins font-[500]  ">Welcome to EstellaEcoCarbon</h1>
@@ -62,7 +62,7 @@ function Product() {
         <h1 className='text-center  text-3xl font-semibold'>Activated Carbon Products</h1>
         <div className='sm:flex pt-4 justify-center'>
         {products.map(product => (
-          <div key={product.id} className='md:w-[380px] md:h-[350px] rounded-xl border-2 border-[--product] overflow-hidden m-4'>
+          <div key={product.id} className='md:w-[380px] hover:scale-[102%] transition-all ease-out  md:h-[350px] rounded-xl border-2 border-[--product] overflow-hidden m-4'>
             <Image src={product.image} alt={product.title} className='w-full h-auto object-cover' />
             <div className='bg-[--product] p-5 h-full text-white'>
               <h1 className='text-xl pb-1'>{product.title}</h1>

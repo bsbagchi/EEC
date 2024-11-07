@@ -5,7 +5,7 @@ import ban from '../images/application.png'
 import one from '../images/application/Frame 1.png';
 import two from '../images/application/Frame 2.png';
 import three from '../images/application/Frame 3.png';
-import four from '../images/application/Frame 6.png';
+import four from '../images/application/Frame 4.png';
 import five from '../images/application/Frame 5.png';
 import six from '../images/application/Frame 6.png';
 import seven from '../images/application/Frame 7.png';
@@ -21,12 +21,12 @@ function Application() {
 
   return (
     <div>
-      <section className="max-sm:h-[24.5rem] md:h-[50rem] relative">
-        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[50rem]  -top-24 -z-10' src={ban} alt='banner'/>
-        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
+      <section className="max-sm:h-[24.5rem] md:h-[40rem] relative">
+        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[40rem]  -top-24 -z-10' src={ban} alt='banner'/>
+        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[40rem] absolute opacity-90 -top-24'></div>
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[8px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[67px] h-[18px] text-white'>Get a Quote&gt;</Link>
         </div>
-        <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px] relative -bottom-2 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-2  leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-3xl font-[600] md:pb-4'>Our Applications</h1>
           <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[40rem]  poppins font-[600] md:text-4xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
           <p  className="max-sm:hidden  block  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
@@ -74,19 +74,19 @@ function Application() {
 
        {/* part 3 */}
        <div className='flex max-sm:px-2 md:p-20 '>
-            <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
+            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative '>
                 <Image className=' '  src={three} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Oil and Gas</h1>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Oil and Gas</h1>
                 <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated Carbon is an excellent choice for the purification of raw materials, intermediates and end products for the oil and gas industry. The removal of unwanted pollutants such as mercury, colors, odors and sulfur compounds allow for consistent production of high-quality natural gas, oil and petrochemical products.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 m-10 md:mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 md:-mt-10 h-[2px] bg-black'></div> 
 
 
         {/* part 4 */}
@@ -97,13 +97,13 @@ function Application() {
                 Activated carbon products; It plays an important role in helping water plants provide clean, safe to drink and drinking water that does not contain unpleasant taste and odor. Our products are used to remove natural and synthetic organic pollutants and suspended solids from surface and groundwater sources, as well as potentially harmful disinfection by-products and residual oxidizing agents that occur during the drinking water treatment process.
                     </p>
             </div>
-            <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative'>
+            <div className='w-[158px] h-[115px] md:w-[25%] md:h-[200px] relative'>
                 <Image   src={four} alt='' />
                 
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 m-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10  md:my-10 h-[2px] bg-black'></div> 
 
 
 

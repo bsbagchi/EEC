@@ -10,6 +10,13 @@ import Image from 'next/image';
 import arr from '../../images/arr.png';
 import Link from 'next/link';
 import Quote from './Quote';
+import one from '../../images/application/Frame 1.png';
+
+import two from '../../images/application/Frame 2.png';
+import three from '../../images/application/Frame 3.png';
+import four from '../../images/application/Frame 4.svg';
+import industry from '../../images/home/industry.png';
+import quality from '../../images/home/quality standard.png';
 
 const Homepage = () => {
 
@@ -83,10 +90,10 @@ const Homepage = () => {
             </p>
             <div className='w-full h-[1px] bg-black my-3'/>
 
-            <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Industry Solutions</h4>
+           <div className="flex gap-5"> <Image width={40} height={40} src={industry} alt=''/> <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Industry Solutions</h4></div>
             <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-7 text-[1.25rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
 
-            <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins font-[400] text-[2.25rem]'>Quality Standards</h4>
+            <div className="flex gap-5"> <Image width={45} height={40} src={quality} alt=''/> <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Quality Standards</h4></div>
             <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] text-[1.25rem]'>EE Carbon Strives To Retain Customers By Providing Quality Products Consistently.</p>
 
             <Link style={{lineHeight:"1.4rem"}} href="about" className="underline poppins font-[600] text-[16px] py-8 flex"><h1>Learn More</h1> <span  className='h-13 '><Image width={10} height={10} src={arr} alt='arrow'/></span></Link>
@@ -123,75 +130,84 @@ const Homepage = () => {
    <section>
    <div className='max-sm:p-0 p-10'>
       <h1 className='p-5 text-4xl font-semibold text-center'>Applications</h1>
-      <div className='max-sm:px-2 md:px-2 lg:px-20 grid max-sm:grid-cols-1 grid-cols-2'>
+      <div className='max-sm:px-2 md:px-2 lg:px-20 '>
         <div className='md:px-10 '>
-            <div className='flex py-3 border-b-2 border-black justify-between'>
-                <h1 className='text-[23px]'>Water Treatement</h1>
-                <div className='flex justify-end items-center'>
-                <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-01' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div>
-              </div>
-            <div className='flex py-3 border-b-2 border-black justify-between'>
-                <h1 className='text-[23px]'>Air / Gas Treatement</h1> <div className='flex justify-end'>
-                <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-            <div className='flex py-3 border-b-2 border-black justify-between'>
-              <h1 className='text-[23px]'>Oil And Gas</h1><div className='flex justify-end'>
-                <h1 className='pr-1 text-sm font-semibold underline'>Read More</h1>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Home Water Filters</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div>
-              </div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Food / Beverage</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Personal Protection</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
+        <section className='poppins max-sm:-mt-10'>
+        {/* part 1 */}
+        <div className='flex max-sm:px-2 md:px-20 md:pt-20  '>
+            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative '>
+                <Image className=' '  src={one} alt='' />
+                
+                </div>
+            <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Water Treatment</h1>
+                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Most of our planet is covered with water, but most of it requires purification to make it suitable for human consumption. Activated carbon plays a central role in ensuring the clean and drinkable nature of the water we drink.</p>
+            </div>
+           
+  
         </div>
-        <div className='md:px-10'> 
-        <div className='flex py-3 border-b-2 border-black justify-between'>
-                <h1 className='text-[23px]'>Water Treatement</h1>
-                <div className='flex justify-end'>
-                <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div>
-              </div>
-              <div className='flex py-3 border-b-2 border-black justify-between'>
-                <h1 className='text-[23px]'>Fule Gass / Mercury</h1><div className='flex justify-end'>
-                <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Pharmaceutical / Medical</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Gold Mining</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Tabacco</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-              <div className='flex py-3 border-b-2 border-black justify-between'><h1 className='text-[23px]'>Automotive</h1><div className='flex justify-end'>
-              <Link href="/application"><h1 className='pr-1 text-[14px] font-semibold underline'>Read More</h1></Link>
-                {/* <Image className='-my-1' width={6} height={6} src={rightarrow} alt='arrow' /> */}
-              </div></div>
-             </div>
+        {/* horizontal line */}
+        <div className=' md:mx-32 mx-10 md:-mt-10 h-[2px] bg-black'></div> 
 
+
+        {/* part 2 */}
+        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Air / Gas Treatment</h1>
+                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                The development of the industry has polluted our atmosphere as disastrous consequences now and in the future. Gas emissions need to be kept under control. 
+                    </p>
+            </div>
+            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative'>
+                <Image   src={two} alt='' />
+                
+                </div>
+        </div>
+         {/* horizontal line */}
+         <div className=' md:mx-32 mx-10  md:-my-10 h-[2px] bg-black'></div> 
+
+       {/* part 3 */}
+       <div className='flex max-sm:px-2 md:p-20 '>
+            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative '>
+                <Image className=' '  src={three} alt='' />
+                
+                </div>
+            <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Oil and Gas</h1>
+                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated Carbon is an excellent choice for the purification of raw materials, intermediates and end products for the oil and gas industry. The removal of unwanted pollutants such as mercury, colors, odors and sulfur compounds allow for consistent production of high-quality natural gas, oil and petrochemical products.</p>
+            </div>
+           
+  
+        </div>
+        {/* horizontal line */}
+        <div className=' md:mx-32 mx-10 md:-mt-10 h-[2px] bg-black'></div> 
+
+
+        {/* part 4 */}
+        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Home Water Filters</h1>
+                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                Activated carbon products; It plays an important role in helping water plants provide clean, safe to drink and drinking water that does not contain unpleasant taste and odor.
+                    </p>
+            </div>
+            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative'>
+                <Image   src={four} alt='' />
+                
+                </div>
+                
+        </div>
+         {/* text-horizontal line */}
+         <div className='text-3xl text-black flex justify-center w-full '><Link className="underline" href={'/application'}>Read more</Link></div>
+
+</section>
+        </div>
+        
       </div>
     </div>
     
    </section>
-   <div className='h-[649px] mt-3 max-sm:h-[400px] bg-black relative overflow-hidden'>
+   <div className='h-[649px]  max-sm:h-[400px] bg-black relative overflow-hidden'>
   <Image className='absolute opacity-[24%] z-0 inset-0 ' src={banner} alt='banner' layout='fill' objectFit='cover' />
   <div className='absolute z-10  flex justify-center w-full h-full'>
     <h1 className='text-[65px] max-sm:text-[1.25rem] max-sm:text-center max-sm:py-5 py-20 poppins font-[300] gradient-text'>Why Choose EstellaEcoCarbon?</h1>
@@ -241,8 +257,8 @@ const Homepage = () => {
     
     <div className='text-justify max-sm:pt-3  text-sm pt-[23px]'>
       
-      <h1  className='max-sm:leading-[14.4px] max-sm:text-[10px] leading-[34.57px] poppins font-[400] text-[24px]'>Innovation:</h1>
-      <p  className='max-sm:leading-[11.5px] max-sm:text-[8px] leading-[1.05rem] text-[--text-contact] text-justify text-[16px]'>Our dedicated team of experts is always available to guide you in choosing the right product for your needs.</p>
+      <h1  className='max-sm:leading-[14.4px] max-sm:text-[10px] leading-[34.57px] poppins font-[400] text-[24px]'>Customer Focus:</h1>
+      <p  className='max-sm:leading-[11.5px] max-sm:text-[8px] leading-[1.05rem] text-[--text-contact] text-justify text-[16px]'>Our customers are at the core of everything we do. We strive to build lasting relationships.</p>
     </div>
     </div>
 
