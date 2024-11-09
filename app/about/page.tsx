@@ -28,7 +28,7 @@ function About() {
           <p  className="max-sm:text-[10px] max-sm:leading-[18.35px]  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           We are committed to delivering high-quality, sustainable activated carbon solutions to a diverse range of industries.
           </p>
-          {/* <button className="w-[316px] h-[67px] max-sm:m-2 max-sm:h-[20px] max-sm:w-[101px] max-sm:text-[10px] mt-7 rounded-[0.5rem]  border-2 border-white montserrat font-[400] text-[2rem]">Get Started</button> */}
+          
         </div>
       </section>
 
