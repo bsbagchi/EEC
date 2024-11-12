@@ -30,7 +30,7 @@ const Services: React.FC = () => {
 
   return (
     <section className="md:p-[50px] text-center">
-      <p className="max-sm:text-[12px] max-sm:leading-[17.28px] max-sm:pt-4 opacity-65 text-[2rem] leading-[3rem]">
+      <p className="max-sm:text-[12px] max-sm:leading-[17.28px] max-sm:pt-4 opacity-60 text-[2rem] leading-[3rem]">
         To make your life easy.
       </p>
       <h2 className="max-sm:text-[12px] max-sm:leading-[17.28px] max-sm:py-2 text-[3rem] leading-[4.5rem] md:py-3 font-['Poppins'] font-medium">
@@ -46,6 +46,7 @@ const Services: React.FC = () => {
   )
 }
 
+// Explicitly typing the props parameter with ServiceCardProps
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
   const [isHovered, setIsHovered] = useState(false)
 
@@ -66,7 +67,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
       <h3 className="text-center font-['Poppins'] font-medium max-sm:text-[16px] py-6 text-[2.5rem] max-sm:leading-[24px] leading-[3.75rem]">
         {title}
       </h3>
-      <p className="max-sm:text-[15px] max-sm:leading-[22.5px] font-['Poppins'] font-[300] leading-[30px] text-justify">
+      <p className="max-sm:text-[15px] max-sm:leading-[22.5px] font-['Poppins'] font-light leading-[30px] text-justify">
         {description}
       </p>
     </div>
