@@ -47,13 +47,13 @@ const Homepage = () => {
   return (
     <div className="">
       {/* Banner */}
-      <section className="max-sm:h-[24.5rem] md:h-[50rem] relative">
-        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[50rem]  -top-24 -z-10' src={ban} alt='banner'/>
-        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
+      <section className="max-sm:h-[24.5rem] md:h-[38.6rem] relative">
+        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[38.6rem]  -top-24 -z-10' src={ban} alt='banner'/>
+        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[3.8.6rem] absolute opacity-90 -top-24'></div>
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[12px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[100px] h-[30px] text-white'>Get a Quote&gt;</Link>
 
         </div>
-        <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[950px] relative h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className="max-sm:w-[231px] max-sm:pr-10 max-sm:pt-2 md:leading-tight  lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px]  max-sm:leading-[17.28px]  poppins font-[600] md:text-5xl lg:text-[56px] ">Pioneering Sustainable Activated Carbon Solutions</h1>
           <p  className="max-sm:text-[10px] max-sm:pt-1 max-sm:leading-[18.35px] text-justify md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
             Discover high-quality, eco-friendly activated carbon products crafted for a sustainable future. 
@@ -67,7 +67,7 @@ const Homepage = () => {
       <section className="">
        
 
-        <div  className="   md:px-20 lg:px-[10%]  justify-items-center px-2">
+        <div  className="   md:px-[5%] lg:px-[10%]  justify-items-center px-2">
           <div  className='justify-items-start w-full pb-5'>
             <h2 style={{lineHeight:'51.85px'}} className="poppins font-[400] text-[36px] ">Welcome To EstellaEcoCarbon</h2>
           <h3 style={{lineHeight:'54.73px'}} className='poppins font-[600] text-[38px]'>About Us</h3>
@@ -78,23 +78,23 @@ const Homepage = () => {
             <Image 
               src={aboutus} 
               alt="Factory Image" 
-              className="lg:w-[640px]"
+              className="lg:w-[500px] lg:h-[450px]"
             />
           </div>
 
-          <div className="lg:w-[60%] sm:pt-5 lg:pl-10">
+          <div className="lg:w-[70%] sm:pt-5 max-sm:pt-2 lg:pl-10">
             
-            <p style={{lineHeight:'36px.7'}} className=' text-justify montserrat font-[400] text-[1.25rem]'>
+            <p style={{lineHeight:'26px'}} className=' text-justify montserrat font-[400] max-sm:py-2 text-[1.2rem]'>
             EstellaEcoCarbon is your trusted partner in the manufacturing of high-quality activated carbon. Specializing in sustainable and efficient solutions, we serve various industries including water treatment, air purification, and food processing. Our products are derived from eco-friendly sources like coconut shells and wood, ensuring that our environmental footprint remains minimal while delivering maximum performance.
 
             </p>
             <div className='w-full h-[1px] bg-black my-3'/>
 
-           <div className="flex gap-5"> <Image width={40} height={40} src={industry} alt=''/> <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Industry Solutions</h4></div>
-            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-7 text-[1.25rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
+           <div className="flex gap-5"> <Image width={40} height={20} src={industry} alt=''/> <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2rem]'>Industry Solutions</h4></div>
+            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] pb-7 text-[1.2rem]'>Activated Carbon Is A Crucial Ingredient Used In All Sectors Industries</p>
 
-            <div className="flex gap-5"> <Image width={45} height={40} src={quality} alt=''/> <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2.25rem]'>Quality Standards</h4></div>
-            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] text-[1.25rem]'>EE Carbon Strives To Retain Customers By Providing Quality Products Consistently.</p>
+            <div className="flex gap-5"> <Image width={45} height={20} src={quality} alt=''/> <h4 style={{lineHeight:'3.24rem'}} className='text-left poppins lg:pt-3 font-[400] text-[2rem]'>Quality Standards</h4></div>
+            <p style={{lineHeight:'1.8rem'}} className='text-left montserrat font-[400] text-[1.2rem]'>EE Carbon Strives To Retain Customers By Providing Quality Products Consistently.</p>
 
             <Link style={{lineHeight:"1.4rem"}} href="about" className="underline poppins font-[600] text-[16px] py-8 flex"><h1>Learn More</h1> <span  className='h-13 '><Image width={10} height={10} src={arr} alt='arrow'/></span></Link>
           </div>
@@ -128,77 +128,84 @@ const Homepage = () => {
 </div>
    </section>
    <section>
-   <div className='max-sm:p-0 p-10'>
+   <div className='max-sm:p-0 '>
       <h1 className='p-5 text-4xl font-semibold text-center'>Applications</h1>
       <div className='max-sm:px-2 md:px-2 lg:px-20 '>
         <div className='md:px-10 '>
-        <section className='poppins max-sm:-mt-10'>
+        <section className='poppins  '>
         {/* part 1 */}
-        <div className='flex max-sm:px-2 md:px-20 md:pt-20  '>
-            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative '>
+        <div className='flex  md:py-10 '>
+            <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
                 <Image className=' '  src={one} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Water Treatment</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Most of our planet is covered with water, but most of it requires purification to make it suitable for human consumption. Activated carbon plays a central role in ensuring the clean and drinkable nature of the water we drink.</p>
+                <h1 className='max-sm:text-[12px]   md:text-3xl lg:text-5xl  max-sm:leading-[17.28px] font-semibold md:p-6'>Water Treatment</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Most of our planet is covered with water, but most of it requires purification to make it suitable for human consumption. Activated carbon plays a central role in ensuring the clean and drinkable nature of the water we drink. Powder and granular activated carbons remove organic chemicals and reduce toxicity in waste water to ensure safe flow into surface water. It is highly effective in deodorization and treatment of soluble organic chemicals, endocrine disruptors and other pollutants.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 mx-10 md:-mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
-        {/* part 2 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+{/* part 2 */}
+<div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Air / Gas Treatment</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
-                The development of the industry has polluted our atmosphere as disastrous consequences now and in the future. Gas emissions need to be kept under control. 
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Air / Gas Treatment</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                The development of the industry has polluted our atmosphere as disastrous consequences now and in the future. Gas emissions need to be kept under control. Considering the concentration limits of pollutants, good air quality and protection of public health can be achieved. Adsorption technology is based on the ability of activated carbon to transport Volatile Organic Compounds (VOCs). Industries have used activated carbon for many years to improve air quality in a variety of applications.
                     </p>
             </div>
-            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative'>
+            <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative'>
                 <Image   src={two} alt='' />
                 
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 mx-10  md:-my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10 max-sm:my-10     h-[2px] bg-black'></div> 
 
-       {/* part 3 */}
-       <div className='flex max-sm:px-2 md:p-20 '>
+
+         {/* part 3 */}
+       <div className='flex max-sm:px-2  md:py-10 '>
             <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative '>
                 <Image className=' '  src={three} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Oil and Gas</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated Carbon is an excellent choice for the purification of raw materials, intermediates and end products for the oil and gas industry. The removal of unwanted pollutants such as mercury, colors, odors and sulfur compounds allow for consistent production of high-quality natural gas, oil and petrochemical products.</p>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:py-6'>Oil and Gas</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated Carbon is an excellent choice for the purification of raw materials, intermediates and end products for the oil and gas industry. The removal of unwanted pollutants such as mercury, colors, odors and sulfur compounds allow for consistent production of high-quality natural gas, oil and petrochemical products.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 mx-10 md:-mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10  h-[2px] bg-black'></div> 
 
 
-        {/* part 4 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+
+         {/* part 4 */}
+         <div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Home Water Filters</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
-                Activated carbon products; It plays an important role in helping water plants provide clean, safe to drink and drinking water that does not contain unpleasant taste and odor.
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Home Water Filters</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                Activated carbon products; It plays an important role in helping water plants provide clean, safe to drink and drinking water that does not contain unpleasant taste and odor. Our products are used to remove natural and synthetic organic pollutants and suspended solids from surface and groundwater sources, as well as potentially harmful disinfection by-products and residual oxidizing agents that occur during the drinking water treatment process.
                     </p>
             </div>
-            <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative'>
+            <div className='w-[158px] h-[115px] md:w-[25%] md:h-[200px] relative'>
                 <Image   src={four} alt='' />
                 
                 </div>
-                
         </div>
+
+
          {/* text-horizontal line */}
-         <div className='text-3xl text-black flex justify-center w-full '><Link className="underline" href={'/application'}>Read more</Link></div>
+         <div className='md:text-3xl text-xs pb-10 max-sm:pt-5 md:-mt-10 text-black flex justify-center w-full '><Link className="underline" href={'/application'}>Read more</Link></div>
 
 </section>
         </div>

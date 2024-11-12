@@ -21,12 +21,12 @@ function Application() {
 
   return (
     <div>
-      <section className="max-sm:h-[24.5rem] md:h-[40rem] relative">
-        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[40rem]  -top-24 -z-10' src={ban} alt='banner'/>
-        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[40rem] absolute opacity-90 -top-24'></div>
+      <section className="max-sm:h-[24.5rem] md:h-[38.6rem] relative">
+        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[38.6rem]  -top-24 -z-10' src={ban} alt='banner'/>
+        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[38.6rem] absolute opacity-90 -top-24'></div>
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[8px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[67px] h-[18px] text-white'>Get a Quote&gt;</Link>
         </div>
-        <div className="lg:w-[993px] relative -bottom-2 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px] relative  h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-2  leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-3xl font-[600] md:pb-4'>Our Applications</h1>
           <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[40rem]  poppins font-[600] md:text-4xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
           <p  className="max-sm:hidden  block  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
@@ -38,29 +38,31 @@ function Application() {
           {/* <button className="w-[316px] h-[67px] max-sm:m-2 max-sm:h-[20px] max-sm:w-[101px] max-sm:text-[10px] mt-7 rounded-[0.5rem]  border-2 border-white montserrat font-[400] text-[2rem]">Get Started</button> */}
         </div>
       </section>
-      <section className='poppins max-sm:-mt-10'>
+      <section className='poppins px-2 md:px-[7%] max-lg:-mt-10'>
         {/* part 1 */}
-        <div className='flex max-sm:px-2 md:p-20 '>
+        <div className='flex  md:py-10 '>
             <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
                 <Image className=' '  src={one} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Water Treatment</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Most of our planet is covered with water, but most of it requires purification to make it suitable for human consumption. Activated carbon plays a central role in ensuring the clean and drinkable nature of the water we drink. Powder and granular activated carbons remove organic chemicals and reduce toxicity in waste water to ensure safe flow into surface water. It is highly effective in deodorization and treatment of soluble organic chemicals, endocrine disruptors and other pollutants.</p>
+                <h1 className='max-sm:text-[12px]   md:text-3xl lg:text-5xl  max-sm:leading-[17.28px] font-semibold md:p-6'>Water Treatment</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Most of our planet is covered with water, but most of it requires purification to make it suitable for human consumption. Activated carbon plays a central role in ensuring the clean and drinkable nature of the water we drink. Powder and granular activated carbons remove organic chemicals and reduce toxicity in waste water to ensure safe flow into surface water. It is highly effective in deodorization and treatment of soluble organic chemicals, endocrine disruptors and other pollutants.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 m-10 md:mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
         {/* part 2 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Air / Gas Treatment</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Air / Gas Treatment</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 The development of the industry has polluted our atmosphere as disastrous consequences now and in the future. Gas emissions need to be kept under control. Considering the concentration limits of pollutants, good air quality and protection of public health can be achieved. Adsorption technology is based on the ability of activated carbon to transport Volatile Organic Compounds (VOCs). Industries have used activated carbon for many years to improve air quality in a variety of applications.
                     </p>
             </div>
@@ -70,30 +72,32 @@ function Application() {
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 m-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10 max-sm:my-10     h-[2px] bg-black'></div> 
 
        {/* part 3 */}
-       <div className='flex max-sm:px-2 md:p-20 '>
+       <div className='flex max-sm:px-2  md:py-10 '>
             <div className='w-[158px] h-[115px] md:w-[30%] md:h-[250px] relative '>
                 <Image className=' '  src={three} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:py-6'>Oil and Gas</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated Carbon is an excellent choice for the purification of raw materials, intermediates and end products for the oil and gas industry. The removal of unwanted pollutants such as mercury, colors, odors and sulfur compounds allow for consistent production of high-quality natural gas, oil and petrochemical products.</p>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:py-6'>Oil and Gas</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated Carbon is an excellent choice for the purification of raw materials, intermediates and end products for the oil and gas industry. The removal of unwanted pollutants such as mercury, colors, odors and sulfur compounds allow for consistent production of high-quality natural gas, oil and petrochemical products.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 mx-10 md:-mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10  h-[2px] bg-black'></div> 
 
 
         {/* part 4 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Home Water Filters</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Home Water Filters</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 Activated carbon products; It plays an important role in helping water plants provide clean, safe to drink and drinking water that does not contain unpleasant taste and odor. Our products are used to remove natural and synthetic organic pollutants and suspended solids from surface and groundwater sources, as well as potentially harmful disinfection by-products and residual oxidizing agents that occur during the drinking water treatment process.
                     </p>
             </div>
@@ -103,32 +107,34 @@ function Application() {
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 mx-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10  max-sm:my-10  h-[2px] bg-black'></div> 
 
 
 
          {/* part 5 */}
-        <div className='flex max-sm:px-2 md:p-20 '>
+        <div className='flex max-sm:px-2  md:py-10'>
             <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
                 <Image className=' '  src={five} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Food / Beverage</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated carbons; It removes contaminants and impurities such as color and odor from sweeteners, food liquids, syrups, beverages, glycerin, amino and organic acids.</p>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Food / Beverage</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>Activated carbons; It removes contaminants and impurities such as color and odor from sweeteners, food liquids, syrups, beverages, glycerin, amino and organic acids.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 m-10 md:mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
         {/* part 6 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Personal Protection</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Personal Protection</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 Protection against toxic gases is one of the oldest applications of granular activated carbon. When chlorine and phosgene were used as military gas in World War I, masks containing activated carbon were developed to respond to this threat. Today, the number of chemicals used in war and industrial zones has increased dramatically and has become more complex.
                     </p>
             </div>
@@ -138,32 +144,34 @@ function Application() {
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 m-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
          {/* part 7 */}
-        <div className='flex max-sm:px-2 md:p-20 '>
+        <div className='flex max-sm:px-2  md:py-10'>
             <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
                 <Image className=' '  src={seven} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Super capacitors</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Super capacitors</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 Super capacitors are high capacity energy storage devices. The storage mechanism for the super capacitors is primarily physically in the form of electrons stored on the surface of the activated carbon and rapidly charged / discharged. Since the amount of charge is related to the number of electrons that can be stored on the surface, activated carbon is the industry standard with a high surface area.</p>
             </div>
            
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 m-10 md:mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10  max-sm:my-10 h-[2px] bg-black'></div> 
 
 
         {/* part 8 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Flue Gas / Mercury</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Flue Gas / Mercury</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 Reacting by-products in mercury and natural gas, petrochemical and refinery feed flows can cause excessive corrosion of metallic components. Mercury is a trace element that occurs in natural gas. Mercury is harmful to the environment and handling and handling of equipment. Natural gas requires purification to prevent adverse effects due to the presence of this substance. Our activated carbons are suitable and efficient for mercury removal.
                     </p>
             </div>
@@ -173,18 +181,19 @@ function Application() {
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 m-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
          {/* part 9 */}
-        <div className='flex max-sm:px-2 md:p-20 '>
+        <div className='flex max-sm:px-2  md:py-10 '>
             <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
                 <Image className=' '  src={nine} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Pharmaceutical / Medical</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Pharmaceutical / Medical</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 The pharmaceuticals may be contaminated by proteins or other organic compounds during production. Different grades of activated carbons can be used to make these products suitable for use.
                 High purity powder and granular activated carbon will be suitable for the processing of pharmaceuticals products.</p>
             </div>
@@ -192,14 +201,15 @@ function Application() {
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 m-10 md:mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
         {/* part 10 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='flex max-sm:px-2  md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Gold Mining</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Gold Mining</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 Our innovative products; gold, precious, rare earth and base metals, uranium, copper, nickel and zinc from ore recovery, waste and recycling are used to recover efficiently.
 CG Carbon’s expertise and experience provide economical and efficient solutions for a wide range of metal recovery applications.
                     </p>
@@ -210,19 +220,20 @@ CG Carbon’s expertise and experience provide economical and efficient solution
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 m-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
 
         {/* part 11 */}
-        <div className='flex max-sm:px-2 md:p-20 '>
+        <div className='flex max-sm:px-2   md:py-10'>
             <div className='w-[158px] h-[115px] md:w-[38%] md:h-[400px] relative '>
                 <Image className=' '  src={eleven} alt='' />
                 
                 </div>
             <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Tobacco</h1>
-                <p className='text-[24px] max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Tobacco</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 It is used in cigarette filters to affect cigarette and aroma properties and to remove unwanted cigarette components from cigarette smoke.
                 Activated Carbon Filters provide removal of carcinogens and other toxic components that cannot be eliminated by ordinary carbonless filters.
                 </p>
@@ -231,14 +242,15 @@ CG Carbon’s expertise and experience provide economical and efficient solution
   
         </div>
         {/* horizontal line */}
-        <div className=' md:mx-32 m-10 md:mt-10 h-[2px] bg-black'></div> 
+        <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
         {/* part 12 */}
-        <div className='flex max-sm:px-2 md:p-20'>
+        <div className='flex max-sm:px-2 md:px-[5%] md:py-10'>
         <div className='w-1/2 md:w-[62%] pl-2 md:h-[560px] md:px-8 text-justify'>
-                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold text-5xl md:p-6'>Automotive</h1>
-                <p className='text-[24px] max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
+                <h1 className='max-sm:text-[12px] max-sm:leading-[17.28px] font-semibold md:text-3xl lg:text-5xl md:p-6'>Automotive</h1>
+                <p className='lg:text-[24px] md:text-[20px]
+ max-sm:pr-2 max-sm:text-[8px] max-sm:leading-[14.68px] text-justify font-normal'>
                 Automotive emissions pose a significant threat to urban air pollution. While exhaust emissions are effectively controlled using exhaust gas catalysts, activated carbon is the most common technology worldwide for evaporating fuel emissions. Active carbon-filled canisters are used to adsorb emissions of high volatile hydrocarbons in the gas tank to prevent them from entering the ambient air. The adsorbed fuel vapors are then desorbed by rearranging the can while the car is being driven. This adsorption / desorption cycle continues to allow active carbon to perform throughout the life of the vehicle.
                     </p>
             </div>
@@ -248,7 +260,7 @@ CG Carbon’s expertise and experience provide economical and efficient solution
                 </div>
         </div>
          {/* horizontal line */}
-         <div className=' md:mx-32 m-10  md:my-10 h-[2px] bg-black'></div> 
+         <div className=' md:mx-32 mx-10 max-sm:my-10 h-[2px] bg-black'></div> 
 
 
 
