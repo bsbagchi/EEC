@@ -1,5 +1,5 @@
 import React from 'react'
-import vis from '../images/vis.png';
+import vis from '../images/about/vision.png';
 import miss from '../images/miss.png'
 import gp from '../images/gp.png'
 import first from '../images/first.png'
@@ -37,9 +37,9 @@ function About() {
       <section>
       <div className="md:px-40 Montserrat px-2">
       {/* Vision Section */}
-      <div className="vision-section flex max-sm:-mt-20 gap-[20px] md:gap-[40px]">
-        <Image  src={vis} alt="Vision" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
-        <div className="text-justify">
+      <div className="vision-section max-sm:flex lg:flex max-sm:-mt-20 gap-[20px] md:gap-[40px]">
+        <Image   src={vis} alt="Vision" className="max-sm:w-[158px]  md:h-[300px]" />
+        <div className="text-justify ">
           <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Vision</h2>
           <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
             To be the global leader in sustainable activated carbon solutions, 
