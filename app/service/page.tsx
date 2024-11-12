@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import './Service.css';
-import ban from '../images/serviceimg.png';
+import ban from '../images/service.jpg';
 import Enquiry from '../components/product/Enquiry';
 import Services from '../components/services/Services';
 import Image from 'next/image';

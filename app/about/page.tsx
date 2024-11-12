@@ -1,8 +1,8 @@
 import React from 'react'
-import vis from '../images/about/vision.png';
-import miss from '../images/miss.png'
-import gp from '../images/gp.png'
-import first from '../images/first.png'
+import vis from '../images/about/vision2.jpg';
+import miss from '../images/about/mission2.jpg';
+import gp from '../images/gp.png';
+import first from '../images/first.png';
 import secound from '../images/secound.png'
 import th from '../images/th.png'
 import fo from '../images/fo.png'
@@ -38,7 +38,8 @@ function About() {
       <div className="md:px-40 Montserrat px-2">
       {/* Vision Section */}
       <div className="vision-section max-sm:flex lg:flex max-sm:-mt-20 gap-[20px] md:gap-[40px]">
-        <Image   src={vis} alt="Vision" className="max-sm:w-[158px]  md:h-[300px]" />
+        <div className='border-2 border-black'>
+        <Image   src={vis} alt="Vision" className="max-sm:w-[158px] md:w-[650px]   md:h-[300px]" /></div>
         <div className="text-justify ">
           <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Vision</h2>
           <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
@@ -51,14 +52,14 @@ function About() {
       {/* Mission Section */}
       <div className="flex mission-section max-sm:mt-5 gap-[20px] md:gap-[40px]">
         <div className=" text-right md:p-8">
-          <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Mission</h2>
+          <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px] '>Mission</h2>
           <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
             To deliver sustainable, high-performance activated carbon solutions 
             that enhance the quality of life and contribute to a cleaner, healthier world.
           </p>
          
         </div>
-        <Image src={miss} alt="Mission" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
+        <Image src={miss} alt="Mission" className="max-sm:w-[158px] md:w-[500px]  md:h-[300px]" />
       </div>
     {/* Additional Section */}
     <div className="flex my-10 gap-[20px] items-center md:gap-[40px]">

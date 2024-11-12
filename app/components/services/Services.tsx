@@ -1,10 +1,19 @@
 'use client'
 
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-export default function Services() {
-  const services = [
+interface Service {
+  title: string;
+  description: string;
+}
+
+interface ServiceCardProps {
+  title: string;
+  description: string;
+}
+
+const Services: React.FC = () => {
+  const services: Service[] = [
     {
       title: "Professional Team",
       description: "EEC is an Organisation Built Upon By a Dedicated, Loyal, and Professional team With Vast Experience in the business."
@@ -37,8 +46,8 @@ export default function Services() {
   )
 }
 
-function ServiceCard({ title, description }) {
-  const [isHovered, setIsHovered] = useState(false)
+const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
+  const [isHovered, setIsHovered] = useState<boolean>(false)
 
   return (
     <div
@@ -63,3 +72,5 @@ function ServiceCard({ title, description }) {
     </div>
   )
 }
+
+export default Services
