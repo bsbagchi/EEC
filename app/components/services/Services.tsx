@@ -47,7 +47,7 @@ const Services: React.FC = () => {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
-  const [isHovered, setIsHovered] = useState<boolean>(false)
+  const [isHovered, setIsHovered] = useState(false)
 
   return (
     <div
