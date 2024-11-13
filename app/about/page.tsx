@@ -6,7 +6,7 @@ import first from '../images/first.png';
 import secound from '../images/secound.png'
 import th from '../images/th.png'
 import fo from '../images/fo.png'
-import ban from '../images/about/about.png';
+import ban from '../images/about/aboutbanner.jpg';
 import Image from 'next/image'
 import Quote from '../components/Home/Quote';
 import Link from 'next/link';
@@ -22,7 +22,7 @@ function About() {
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[12px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[100px] h-[30px] text-white'>Get a Quote&gt;</Link>
         
         </div>
-        <div className="lg:w-[993px] relative -bottom-2 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px]  relative max-sm:-bottom-14 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-3 leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px] text-[2.5rem] poppins md:pb-3 md:text-5xl font-[600]'>About Us</h1>
           <h1 className="max-sm:leading-[17.28px] md:leading-tight lg:leading-[80.66px] max-sm:py-2 lg:mb-[20px] max-sm:text-[12px] md:w-[25rem] lg:w-[30rem] text-[#D1D1D1] poppins font-[500] md:text-5xl lg:text-[56px] ">Welcome to EstellaEcoCarbon</h1>
           <p  className="max-sm:text-[10px] max-sm:leading-[18.35px]  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
@@ -38,8 +38,8 @@ function About() {
       <div className="md:px-40 Montserrat px-2">
       {/* Vision Section */}
       <div className="vision-section max-sm:flex lg:flex max-sm:-mt-20 gap-[20px] md:gap-[40px]">
-        <div className='border-2 border-black'>
-        <Image   src={vis} alt="Vision" className="max-sm:w-[158px] md:w-[650px]   md:h-[300px]" /></div>
+        <div className=''>
+        <Image   src={vis} alt="Vision" className="max-sm:w-[300px] max-sm:h-[100px] md:w-[650px]   md:h-[300px]" /></div>
         <div className="text-justify ">
           <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Vision</h2>
           <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
@@ -59,7 +59,7 @@ function About() {
           </p>
          
         </div>
-        <Image src={miss} alt="Mission" className="max-sm:w-[158px] md:w-[500px]  md:h-[300px]" />
+        <Image src={miss} alt="Mission" className="max-sm:w-[158px]  md:w-[500px]  md:h-[300px]" />
       </div>
     {/* Additional Section */}
     <div className="flex my-10 gap-[20px] items-center md:gap-[40px]">

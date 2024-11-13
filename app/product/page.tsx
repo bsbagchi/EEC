@@ -43,7 +43,7 @@ function Product() {
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[12px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[100px] h-[30px] text-white'>Get a Quote&gt;</Link>
         
         </div>
-        <div className="lg:w-[993px] relative -bottom-2 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px] relative max-sm:-bottom-16 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-4  leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px]  text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
           <h1 className="max-sm:hidden block md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px]  md:w-[25rem] lg:w-[40rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
           <h1 className="max-sm:block hidden w-[213px] max-sm:py-2 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px]   poppins font-[500]  ">Welcome to EstellaEcoCarbon</h1>

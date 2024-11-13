@@ -26,13 +26,13 @@ function Application() {
         <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[38.6rem] absolute opacity-90 -top-24'></div>
         <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[8px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[67px] h-[18px] text-white'>Get a Quote&gt;</Link>
         </div>
-        <div className="lg:w-[993px] relative  h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px] relative  h-[441px] max-sm:-bottom-16 max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:pl-4 max-sm:pr-2  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-2  leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-3xl font-[600] md:pb-4'>Our Applications</h1>
           <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[40rem]  poppins font-[600] md:text-4xl lg:text-[56px] ">At EstellaEcoCarbon</h1>
           <p  className="max-sm:hidden  block  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           According to the adsorption characteristics of activated carbon, activated carbon is mainly used to remove pollutants, decolorize, filter and purify liquids and gases in water. It is also used for air purification, waste gas recovery (such as gas benzene recovery in the chemical industry), precious metal recovery and refining (such as gold absorption).
           </p>
-          <p className='max-sm:block hidden max-sm:text-[10px]'>
+          <p className='max-sm:block hidden pt-1  max-sm:text-[10px]'>
           According to the adsorption characteristics of activated carbon, activated carbon is mainly used to remove pollutants, decolorize, filter and purify liquids and gases in water.
           </p>
           {/* <button className="w-[316px] h-[67px] max-sm:m-2 max-sm:h-[20px] max-sm:w-[101px] max-sm:text-[10px] mt-7 rounded-[0.5rem]  border-2 border-white montserrat font-[400] text-[2rem]">Get Started</button> */}

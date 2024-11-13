@@ -17,7 +17,7 @@ function Product1() {
 
         
         </div>
-        <div className="lg:w-[993px] relative -bottom-2 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+        <div className="lg:w-[993px] relative max-sm:-bottom-16 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
           <h1 className='max-sm:pt-4 max-sm:leading-[17.28px] leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4'>Our Products</h1>
           <h1 className=" max-sm:py-1 md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] max-sm:text-[12px] max-sm:leading-[17.28px] md:w-[25rem] lg:w-[60rem]  poppins font-[500] md:text-5xl lg:text-[56px] ">GRANULAR ACTIVATED CARBON</h1>
           <p  className=" block max-sm:hidden md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
