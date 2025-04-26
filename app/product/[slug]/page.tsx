@@ -2,9 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-
+import { Metadata } from 'next';
 import HeroBanner from '@/app/components/HeroBanner';
 import { Button } from '@/components/ui/button';
+import { BreadcrumbSchema, ProductSchema } from '@/app/components/SchemaMarkup';
 
 // Sample product data - in a real app this would come from a database or API
 const products = {
@@ -88,6 +89,39 @@ export function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const { slug } = params;
+  const product = products[slug as keyof typeof products];
+
+  if (!product) {
+    return {
+      title: 'Product Not Found',
+      description: 'The product you are looking for does not exist.',
+    };
+  }
+
+  return {
+    title: `${product.name} | CG Carbon`,
+    description: product.description,
+    alternates: {
+      canonical: `/product/${slug}`,
+    },
+    openGraph: {
+      title: `${product.name} | CG Carbon`,
+      description: product.description,
+      type: 'product',
+      images: [
+        {
+          url: product.bannerImage,
+          width: 800,
+          height: 600,
+          alt: product.name,
+        },
+      ],
+    },
+  };
+}
+
 export default function ProductPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const product = products[slug as keyof typeof products];
@@ -106,12 +140,28 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   return (
     <div>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: 'https://cgcarbon.in/' },
+          { name: 'Products', item: 'https://cgcarbon.in/product' },
+          { name: product.name }
+        ]}
+      />
+
+      <ProductSchema
+        name={product.name}
+        image={`https://cgcarbon.in${product.bannerImage}`}
+        description={product.description}
+        url={`https://cgcarbon.in/product/${slug}`}
+      />
+
       {/* Hero Banner */}
       <HeroBanner
         backgroundImage={product.bannerImage}
         title="Our Products"
         subtitle={product.name}
         description={product.description}
+        imageAlt={`${product.name} - CG Carbon`}
       />
 
       {/* Product Overview */}

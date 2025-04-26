@@ -1,43 +1,57 @@
 import React from 'react';
 import Image from 'next/image';
 import { CheckCircle2, Award, Users, Leaf, Shield, FileCheck } from 'lucide-react';
-
+import { Metadata } from 'next';
 import HeroBanner from '../components/HeroBanner';
 import aboutBanner from '../images/aboutimag.png';
 import aboutImage1 from '../images/home/EEC.JPG';
+import { OrganizationSchema, BreadcrumbSchema } from '../components/SchemaMarkup';
+
+export const metadata: Metadata = {
+  title: 'About Us | CG Carbon',
+  description: 'Learn about CG Carbon, a leading manufacturer of high-quality activated carbon products for water treatment, air purification, and more.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'About Us | CG Carbon',
+    description: 'Learn about CG Carbon, a leading manufacturer of high-quality activated carbon products for water treatment, air purification, and more.',
+    url: 'https://cgcarbon.in/about',
+    type: 'website',
+  },
+};
 
 export default function AboutPage() {
   return (
-    <div>
-      {/* Hero Banner */}
+    <>
+      <OrganizationSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: 'https://cgcarbon.in/' },
+          { name: 'About Us' },
+        ]}
+      />
+
+      {/* Hero Section */}
       <HeroBanner
-        backgroundImage={aboutBanner}
+        backgroundImage={aboutBanner.src}
         title="About Us"
-        subtitle="Welcome to EstellaEcoCarbon"
-        description="We are committed to delivering high-quality, sustainable activated carbon solutions to a diverse range of industries."
+        subtitle="CG Carbon"
+        description="Pioneering Sustainable Activated Carbon Solutions"
+        imageAlt="CG Carbon About Us Banner"
       />
 
       {/* Company Overview */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
-            <div className="w-full lg:w-1/2">
-              <Image
-                src={aboutImage1}
-                alt="EstellaEcoCarbon Facility"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
-              />
-            </div>
-
+          <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="w-full lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-gray-800">Our Story</h2>
+              <h2 className="text-3xl font-bold text-gray-800">Our Company</h2>
               <p className="text-gray-600">
-                Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
+                Founded on the principles of innovation and sustainability, CG Carbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
               </p>
               <p className="text-gray-600">
-                At EstellaEcoCarbon, we believe in creating products that not only solve our clients' purification needs but also contribute to a healthier planet. Our commitment to sustainability drives every aspect of our business, from sourcing raw materials to manufacturing processes.
+                At CG Carbon, we believe in creating products that not only solve our clients' purification needs but also contribute to a healthier planet. Our commitment to sustainability drives every aspect of our business, from sourcing raw materials to manufacturing processes.
               </p>
 
               <div className="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -58,6 +72,17 @@ export default function AboutPage() {
                   <span className="text-gray-700">Expert Technical Support</span>
                 </div>
               </div>
+            </div>
+
+            <div className="w-full lg:w-1/2">
+              <Image
+                src={aboutImage1}
+                alt="CG Carbon Facility"
+                className="rounded-lg shadow-lg"
+                width={600}
+                height={400}
+                priority
+              />
             </div>
           </div>
         </div>
@@ -107,7 +132,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Core Values</h2>
           <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
-            At EstellaEcoCarbon, our values define who we are and guide our actions. They inform our decisions and shape our culture.
+            At CG Carbon, our values define who we are and guide our actions. They inform our decisions and shape our culture.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -154,7 +179,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certifications - Updated to use icons instead of missing images */}
+      {/* Certifications */}
       <section className="py-16 bg-background-accent">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Certifications</h2>
@@ -195,6 +220,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

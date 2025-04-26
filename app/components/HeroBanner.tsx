@@ -6,13 +6,15 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
 interface HeroBannerProps {
-  backgroundImage: any;
+  backgroundImage: string;
   title: string;
-  subtitle?: string;
+  subtitle: string;
   description: string;
   showQuoteLink?: boolean;
   className?: string;
   imageClassName?: string;
+  headingLevel?: 'h1' | 'h2';
+  imageAlt?: string;
 }
 
 const HeroBanner = ({
@@ -23,48 +25,63 @@ const HeroBanner = ({
   showQuoteLink = true,
   className,
   imageClassName,
+  headingLevel = 'h1',
+  imageAlt = "CG Carbon Banner Image"
 }: HeroBannerProps) => {
+  // Dynamic heading component based on the heading level prop
+  const HeadingComponent = headingLevel;
+
   return (
-    <section className={cn("relative md:h-[40rem] max-sm:h-[24.5rem]", className)}>
+    <section
+      className={cn("relative md:h-[40rem] max-sm:h-[24.5rem]", className)}
+      aria-labelledby="banner-title"
+    >
       <div>
         <Image
           className={cn("absolute w-full md:h-[40rem] max-sm:h-[24.5rem] -top-24 -z-10 object-cover", imageClassName)}
           src={backgroundImage}
-          alt="banner"
+          alt={imageAlt}
           priority
+          width={1920}
+          height={1080}
         />
         <div
           className="z-0 w-full md:h-[40rem] max-sm:h-[24.5rem] absolute -top-24 banner-overlay"
+          aria-hidden="true"
         />
 
         {showQuoteLink && (
           <Link href={'/contact'}>
             <Button
-              variant="corporate"
-              className='absolute right-4 top-4 font-medium shadow-md'
+              className="absolute right-1 -top-1 text-center bg-black bg-opacity-70 montserrat text-[12px] leading-[14.68px] hidden max-sm:flex justify-center items-center w-[100px] h-[30px] text-white"
+              aria-label="Get a quote"
             >
-              Get a Quote →
+              Get a Quote&gt;
             </Button>
           </Link>
         )}
-      </div>
 
-      <div className="lg:w-[993px] relative max-sm:-bottom-16 md:h-[441px] max-sm:w-[17.5rem] max-sm:h-auto max-sm:px-3 md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] backdrop-blur-sm text-white shadow-lg border border-white/10">
-        <h1 className='max-sm:pt-3 max-sm:leading-[17.28px] leading-[3.6rem] max-sm:text-[12px] text-[2.5rem] poppins md:text-5xl font-[600] md:pb-3'>
-          {title}
-        </h1>
+        <div className="lg:w-[993px] relative h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3 md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
+          {title && (
+            <HeadingComponent
+              id="banner-title"
+              className="max-sm:pt-2 leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px] text-[2.5rem] poppins md:text-5xl font-[600] md:pb-4"
+            >
+              {title}
+            </HeadingComponent>
+          )}
 
-        {subtitle && (
-          <h2 className="max-sm:leading-[17.28px] md:leading-tight lg:leading-[80.66px] max-sm:py-2 lg:mb-[20px] max-sm:text-[12px] md:w-[25rem] lg:w-[30rem] text-[#D1D1D1] poppins font-[500] md:text-5xl lg:text-[56px]">
-            {subtitle}
-          </h2>
-        )}
+          {subtitle && (
+            <h2 className="md:leading-tight lg:leading-[80.66px] text-[#D1D1D1] lg:mb-[20px] md:w-[25rem] lg:w-[40rem] poppins font-[600] md:text-5xl lg:text-[56px]">
+              {subtitle}
+            </h2>
+          )}
 
-        <div className="max-sm:text-[10px] max-sm:leading-[18.35px] max-sm:py-2 md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
-          <p className="max-sm:hidden md:block">{description}</p>
-          <p className="max-sm:block hidden max-sm:w-[90%]">
-            {description.length > 100 ? description.substring(0, 100) + '...' : description}
-          </p>
+          {description && (
+            <p className="md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
+              {description}
+            </p>
+          )}
         </div>
       </div>
     </section>
