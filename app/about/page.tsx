@@ -1,127 +1,200 @@
-import React from 'react'
-import vis from '../images/about/vision2.jpg';
-import miss from '../images/about/mission2.jpg';
-import gp from '../images/gp.png';
-import first from '../images/first.png';
-import secound from '../images/secound.png'
-import th from '../images/th.png'
-import fo from '../images/fo.png'
-import ban from '../images/about/aboutbanner.jpg';
-import Image from 'next/image'
-import Quote from '../components/Home/Quote';
-import Link from 'next/link';
+import React from 'react';
+import Image from 'next/image';
+import { CheckCircle2, Award, Users, Leaf, Shield, FileCheck } from 'lucide-react';
 
+import HeroBanner from '../components/HeroBanner';
+import aboutBanner from '../images/aboutimag.png';
+import aboutImage1 from '../images/home/EEC.JPG';
 
-function About() {
+export default function AboutPage() {
   return (
-    <div> 
-      
-      <section className="max-sm:h-[24.5rem] md:h-[40rem] relative">
-        <div><Image  className='absolute w-full max-sm:h-[24.5rem] md:h-[40rem]  -top-24 -z-10' src={ban} alt='banner'/>
-        <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[40rem] absolute opacity-90 -top-24'></div>
-        <Link href={'/contact'} className='  absolute right-1 -top-1 text-center bg-black montserrat text-[12px] leading-[14.68px] hidden max-sm:flex justify-center bg-opacity-70 items-center   w-[100px] h-[30px] text-white'>Get a Quote&gt;</Link>
-        
-        </div>
-        <div className="lg:w-[993px]  relative max-sm:-bottom-14 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
-          <h1 className='max-sm:pt-3 leading-[3.6rem] max-sm:text-[12px] max-sm:leading-[17.28px] text-[2.5rem] poppins md:pb-3 md:text-5xl font-[600]'>About Us</h1>
-          <h1 className="max-sm:leading-[17.28px] md:leading-tight lg:leading-[80.66px] max-sm:py-2 lg:mb-[20px] max-sm:text-[12px] md:w-[25rem] lg:w-[30rem] text-[#D1D1D1] poppins font-[500] md:text-5xl lg:text-[56px] ">Welcome to EstellaEcoCarbon</h1>
-          <p  className="max-sm:text-[10px] max-sm:leading-[18.35px]  md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
-          We are committed to delivering high-quality, sustainable activated carbon solutions to a diverse range of industries.
-          </p>
-          
+    <div>
+      {/* Hero Banner */}
+      <HeroBanner
+        backgroundImage={aboutBanner}
+        title="About Us"
+        subtitle="Welcome to EstellaEcoCarbon"
+        description="We are committed to delivering high-quality, sustainable activated carbon solutions to a diverse range of industries."
+      />
+
+      {/* Company Overview */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="w-full lg:w-1/2">
+              <Image
+                src={aboutImage1}
+                alt="EstellaEcoCarbon Facility"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="w-full lg:w-1/2 space-y-6">
+              <h2 className="text-3xl font-bold text-gray-800">Our Story</h2>
+              <p className="text-gray-600">
+                Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
+              </p>
+              <p className="text-gray-600">
+                At EstellaEcoCarbon, we believe in creating products that not only solve our clients' purification needs but also contribute to a healthier planet. Our commitment to sustainability drives every aspect of our business, from sourcing raw materials to manufacturing processes.
+              </p>
+
+              <div className="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-primary-500 shrink-0 mt-0.5" />
+                  <span className="text-gray-700">ISO 9001:2015 Certified</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-primary-500 shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Premium Quality Products</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-primary-500 shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Global Supply Network</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-primary-500 shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Expert Technical Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* Vision & Mission */}
+      <section className="py-16 bg-background-accent">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Vision */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="mb-4 p-3 inline-block bg-primary-50 rounded-full">
+                <Award className="h-8 w-8 text-primary-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+              <p className="text-gray-600">
+                To be a global leader in providing innovative and sustainable activated carbon solutions that contribute to a cleaner and healthier world.
+              </p>
+              <div className="mt-6 border-t border-gray-100 pt-6">
+                <p className="text-gray-600 italic">
+                  "We envision a world where our sustainable purification solutions create safer environments and healthier communities."
+                </p>
+              </div>
+            </div>
 
-
-      <section>
-      <div className="md:px-40 Montserrat px-2">
-      {/* Vision Section */}
-      <div className="vision-section max-sm:flex lg:flex max-sm:-mt-20 gap-[20px] md:gap-[40px]">
-        <div className=''>
-        <Image   src={vis} alt="Vision" className="max-sm:w-[300px] max-sm:h-[100px] md:w-[650px]   md:h-[300px]" /></div>
-        <div className="text-justify ">
-          <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Vision</h2>
-          <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
-            To be the global leader in sustainable activated carbon solutions, 
-            revolutionizing industries and promoting a healthier planet.
-          </p>
+            {/* Mission */}
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="mb-4 p-3 inline-block bg-primary-50 rounded-full">
+                <Leaf className="h-8 w-8 text-primary-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+              <p className="text-gray-600">
+                To deliver high-quality activated carbon products through sustainable practices, continuous innovation, and commitment to excellence, while maintaining long-term relationships with our customers and partners.
+              </p>
+              <div className="mt-6 border-t border-gray-100 pt-6">
+                <p className="text-gray-600 italic">
+                  "Every day we strive to combine innovation with environmental responsibility in our pursuit of excellence."
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      
-      {/* Mission Section */}
-      <div className="flex mission-section max-sm:mt-5 gap-[20px] md:gap-[40px]">
-        <div className=" text-right md:p-8">
-          <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px] '>Mission</h2>
-          <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
-            To deliver sustainable, high-performance activated carbon solutions 
-            that enhance the quality of life and contribute to a cleaner, healthier world.
-          </p>
-         
-        </div>
-        <Image src={miss} alt="Mission" className="max-sm:w-[158px]  md:w-[500px]  md:h-[300px]" />
-      </div>
-    {/* Additional Section */}
-    <div className="flex my-10 gap-[20px] items-center md:gap-[40px]">
-    <div className="text-justify md:p-8 ">
-        <p className="max-sm:text-[8px] block max-sm:hidden md:pr-10 leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]">
-        Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
-        Founded on the principles of innovation and sustainability, EstellaEcoCarbon has emerged as a leading force in the activated carbon industry. Our unwavering commitment to excellence has enabled us to develop a comprehensive range of products that cater to diverse applications across various sectors.
-        </p>
-       <p className="max-sm:text-[8px] max-sm:block hidden  md:pr-10 leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]">
-       Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
-       applications across various sectors.
-       </p>
-        </div>
-          <Image src={gp} alt="Extra 1" className="max-sm:w-[158px] max-sm:h-auto w-[528px] md:h-[398px]" />
-          {/* <Image src={extraImage2} alt="Extra 2" className="extra-image" /> */}
-        
-      </div>
-      
-    </div>
-
-
-
-    
       </section>
 
+      {/* Values */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Core Values</h2>
+          <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
+            At EstellaEcoCarbon, our values define who we are and guide our actions. They inform our decisions and shape our culture.
+          </p>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="mb-4 bg-primary-50 p-3 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+                <Users className="h-8 w-8 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Customer Focus</h3>
+              <p className="text-gray-600">
+                Our customers are at the center of everything we do. We listen to their needs and work to exceed their expectations.
+              </p>
+            </div>
 
-      <Quote/>
-     
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="mb-4 bg-primary-50 p-3 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+                <Award className="h-8 w-8 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Excellence</h3>
+              <p className="text-gray-600">
+                We strive for the highest quality in our products and services, constantly seeking ways to improve.
+              </p>
+            </div>
 
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="mb-4 bg-primary-50 p-3 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+                <Leaf className="h-8 w-8 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Sustainability</h3>
+              <p className="text-gray-600">
+                We are committed to environmentally responsible practices throughout our operations.
+              </p>
+            </div>
 
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="mb-4 bg-primary-50 p-3 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+                <Award className="h-8 w-8 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Integrity</h3>
+              <p className="text-gray-600">
+                We operate with honesty, transparency, and ethical behavior in all our business dealings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-     <section >
-     <div className='text-center max-sm:justify-items-center py-6 md:p-5' >
-      <h1 className='font-[700] max-sm:text-[12px] max-sm:leading-[34px] text-[1.1rem] underline'>CERTIFICATION</h1>
-      <h2 className='text-[2rem] max-sm:text-[10px] max-sm:w-[12rem] '>EstellaEcoCarbon LEADING CARBON MANUFACTURERS </h2>
-      
-      <div className='flex justify-center gap-3 md:gap-10 my-5 items-center' >
-        <Image className='max-sm:w-[91px] max-sm:h-auto  md:w-[200px] md:h-[200px]' src={first} alt="Good Quality Product"  />
-        <Image className='max-sm:w-[128px] max-sm:h-auto md:w-[300px] md:h-[300px]' src={secound} alt="Premium Quality Product"  />
-        <Image className='max-sm:w-[91px] max-sm:h-auto md:w-[200px] md:h-[200px]' src={th} alt="Best Product"  />
-      </div>
+      {/* Certifications - Updated to use icons instead of missing images */}
+      <section className="py-16 bg-background-accent">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Certifications</h2>
+          <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
+            Our commitment to quality and standards is reflected in our certifications and quality management systems.
+          </p>
 
-      <h3 className='text-[3rem] poppins font-[300] max-sm:text-[10px] max-sm:w-[12rem] max-sm:leading-[16px] '>Your Partner in Sustainable Activated Carbon Solutions</h3>
-      
-     
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all hover:shadow-lg">
+              <div className="mb-6 bg-primary-50 p-6 rounded-full mx-auto w-24 h-24 flex items-center justify-center">
+                <FileCheck className="h-12 w-12 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">ISO 9001:2015</h3>
+              <p className="text-gray-600">
+                Quality Management System certification ensuring consistent quality products and services through standardized processes.
+              </p>
+            </div>
 
-      <div className='md:mt-10 flex justify-center md:my-[10px] max-sm:px-2 items-center' >
-        <Image className='max-sm:w-[5rem] max-sm:h-auto md:w-[300px] md:h-[300px]' src={fo} alt="Trusted Certification"  />
-        <p className='w-1/2  montserrat font-[400] px-6  text-justify  max-sm:hidden'   >
-     We are deeply committed to environmental stewardship. Our activated carbon is derived from eco-friendly raw materials such as coconut shells and wood, promoting sustainable practices and reducing our carbon footprint. Our manufacturing processes are designed to minimise waste and maximise efficiency.
-Innovation is at the heart of EstellaEcoCarbon. We continuously invest in research and development to advance our technologies and improve the efficacy of our products. Our dedicated team of experts works tirelessly to develop cutting-edge solutions that meet the evolving needs of our customers
-At EstellaEcoCarbon, we offer a wide array of activated carbon products tailored to meet the specific needs of our clients. Whether it&apos;s purifying water, improving air quality, or ensuring the safety of food and beverages, our products deliver exceptional performance and reliability.
-Our customers are at the core of everything we do. We strive to build lasting relationships by providing exceptional customer service and support. Our team of specialists is always ready to assist you in selecting the right activated carbon solutions for your applications.
-     </p>
-     <p className='w-3/4 montserrat font-[400] text-[8px] text-justify hidden max-sm:block px-2'>Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
-     </p>
-      </div>
+            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all hover:shadow-lg">
+              <div className="mb-6 bg-primary-50 p-6 rounded-full mx-auto w-24 h-24 flex items-center justify-center">
+                <Leaf className="h-12 w-12 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">ISO 14001:2015</h3>
+              <p className="text-gray-600">
+                Environmental Management System certification for environmentally responsible operations and sustainable practices.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all hover:shadow-lg">
+              <div className="mb-6 bg-primary-50 p-6 rounded-full mx-auto w-24 h-24 flex items-center justify-center">
+                <Shield className="h-12 w-12 text-primary-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">NSF Certified</h3>
+              <p className="text-gray-600">
+                Our products meet the strict standards for use in water purification systems, ensuring safety and performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-     </section>
-    </div>
-  )
+  );
 }
-
-export default About

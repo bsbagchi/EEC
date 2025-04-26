@@ -1,75 +1,184 @@
 import React from 'react';
-import './Footer.css'; // Import the external CSS
-// import inst from '../../images/instram.png';  // Instagram icon image
-// import face from '../../images/face.png';     // Facebook icon image
-// import x from '../../images/x.png';           // X (formerly Twitter) icon image
-// import link from '../../images/link.png';     // LinkedIn icon image
-// import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin, ChevronRight } from 'lucide-react';
+
+// Import logo if you have one
+import logo from '../../images/logo.png';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-[--footer-bg]">
-      <div className="w-full lg:flex justify-between py-5 px-3 md:px-8 lg:px-16">
-        {/* Left Side - Company Info */}
-        <div className="max-sm:flex pr-2">
-          <div>
-          <h2  className="lg:leading-[88.03px] max-sm:leading-[22.02px] max-sm:text-[12px] montserrat font-[600] text-[40px]">EstellaEcoCarbon</h2>
-          <p  className="lg:leading-[44.04px] max-sm:leading-[18.35px] max-sm:text-[10px] montserrat font-[300] text-[20px]">Pioneering Sustainable Activated Carbon Solutions</p>
-          <p  className='lg:leading-[44.04px] max-sm:leading-[18.35px] max-sm:text-[10px] montserrat font-[400] w-[15rem] text-[20px]'>SadaShivnagar, Bangalore - 535022</p>
-          <div  className='flex leading-[44.04px] max-sm:leading-[18.35px] max-sm:text-[10px] montserrat text-[20px]' ><h1  className=' font-[600]  '>Phone:</h1> <h1  className='font-[400] px-2 '>9876543210</h1></div>
-          <div className='flex leading-[44.04px] max-sm:leading-[18.35px] max-sm:text-[10px] montserrat text-[20px]'><h1  className=' font-[600]  '>Email:</h1> <h1  className=' font-[400] px-2 '>info@example.com</h1></div>
-          </div>
-          {/* Social Icons */}
-          {/* <div className="h-[40px] max-sm:w-full lg:h-[83px] lg:w-[339px] mt-4 flex">
-            <Link href="#"><Image src={inst}  className="w-fit h-fit" alt="Instagram" /></Link>
-            <Link href="#"><Image src={face} className="w-fit h-fit max-sm:py-1 md:py-2 "  alt="Facebook" /></Link>
-            <Link href="#"><Image src={x} className=" w-fit h-fit md:py-3 max-sm:pt-[4px] max-sm:mx-[2px] md:mx-3" alt="X" /></Link>
-            <Link href="#"><Image src={link} className="w-fit h-fit max-sm:pt-[1px] max-sm:ml-[2px] " alt="LinkedIn" /></Link>
-          </div> */}
-        </div>
+    <footer className="bg-gray-100">
+      {/* Main Footer */}
+      <div className="container mx-auto pt-16 pb-8 px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Information */}
+          <div className="space-y-6">
+            <Link href="/" className="inline-block">
+              <Image
+                src={logo}
+                alt="EstellaEcoCarbon Logo"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
+              />
+            </Link>
 
-        {/* Right Side - Links */}
-        <div className="max-sm:w-full w-[40.6rem] py-7 ">
-          <div  className="max-sm:leading-[18.35px] max-sm:text-[10px] leading-[40.04px] w-full flex  montserrat font-regular text-[20px] ">
-            <h4  className='max-sm:leading-[18.35px] max-sm:text-[10px] border-r-[1px] border-black border-opacity-40 w-1/3' >Useful Links</h4>
-          
-            <h4 className='max-sm:leading-[18.35px] max-sm:text-[10px] pl-10'>Our Services</h4>
-          </div>
-<div className='w-full max-sm:h-[0.5px] h-[2px] bg-black opacity-50 my-1'></div>
-          <div className="max-sm:w-full w-[40.6rem] text-[#252525] flex">
-            <div className='w-1/3 border-r-2 max-sm:border-r-[0.5px] border-black border-opacity-50 '> 
-            <ul className="max-sm:leading-[18.35px] max-sm:text-[10px] leading-[40.04px] montserrat font-normal text-[20px] ">
-              <li><Link href={'/'}>Home</Link></li>
-              <li><Link href={'/about'}>About Us</Link></li>
-              <li><Link href={'/service'}>Services</Link></li>
-              <li>Terms of Services</li>
-              <li>Privacy Policy</li>
-            </ul></div>
-            <div className='pl-10'>
-            <ul  className="max-sm:leading-[18.35px] max-sm:text-[10px] leading-[40.04px] montserrat font-normal text-[20px]">
-              <li>Water Treatment Industry</li>
-              <li>Air and Gas Purification Industry</li>
-              <li>Food and Beverage Industry</li>
-              <li>Terms of Services</li>
-              <li>Privacy Policy</li>
-            </ul>
+            <p className="text-gray-600 max-w-xs">
+              Pioneering Sustainable Activated Carbon Solutions for a cleaner, healthier world.
+            </p>
+
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3 text-gray-600">
+                <MapPin className="h-5 w-5 text-primary-500 mt-0.5" />
+                <span>SadaShivnagar, Bangalore - 535022</span>
+              </div>
+
+              <div className="flex items-center space-x-3 text-gray-600">
+                <Phone className="h-5 w-5 text-primary-500" />
+                <span>+91 94818 73543</span>
+              </div>
+
+              <div className="flex items-center space-x-3 text-gray-600">
+                <Mail className="h-5 w-5 text-primary-500" />
+                <span>contact@estellaecocarbon.com</span>
+              </div>
             </div>
-           
-        
-            
-            
+
+            <div className="flex space-x-4">
+              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:shadow-md transition-all">
+                <Facebook className="h-5 w-5 text-primary-500" />
+              </a>
+              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:shadow-md transition-all">
+                <Instagram className="h-5 w-5 text-primary-500" />
+              </a>
+              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:shadow-md transition-all">
+                <Twitter className="h-5 w-5 text-primary-500" />
+              </a>
+              <a href="#" className="bg-white p-2 rounded-full shadow-sm hover:shadow-md transition-all">
+                <Linkedin className="h-5 w-5 text-primary-500" />
+              </a>
+            </div>
           </div>
-          <div  className="max-sm:hidden    leading-[35.04px] bg-[#00000014] flex rounded-[24px]  justify-center items-center w-[90%] h-[65px] mt-10 montserrat font-normal text-[20px]">
-        <p>
-          &copy; Copyright <span className='font-[600]'>EstellaEcoCarbon</span> All Rights Reserved
-        </p>
-      </div>
+
+          {/* Useful Links */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-6">Useful Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/product" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link href="/service" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Our Services */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-6">Our Services</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/service" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Water Treatment Industry
+                </Link>
+              </li>
+              <li>
+                <Link href="/service" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Air and Gas Purification
+                </Link>
+              </li>
+              <li>
+                <Link href="/service" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Food and Beverage Industry
+                </Link>
+              </li>
+              <li>
+                <Link href="/service" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Carbon Reactivation
+                </Link>
+              </li>
+              <li>
+                <Link href="/service" className="text-gray-600 hover:text-primary-500 transition-colors flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" />
+                  Custom Carbon Solutions
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-6">Newsletter</h3>
+            <p className="text-gray-600 mb-4">
+              Subscribe to our newsletter to receive updates and news about our products and services.
+            </p>
+
+            <form className="space-y-3">
+              <div>
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-4 rounded-md transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Copyright Bar */}
+        <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-600 text-center md:text-left">
+            &copy; {currentYear} <span className="font-semibold">EstellaEcoCarbon</span>. All Rights Reserved.
+          </p>
+
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <Link href="/privacy-policy" className="text-gray-600 hover:text-primary-500 transition-colors text-sm">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="text-gray-600 hover:text-primary-500 transition-colors text-sm">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
-
-      {/* Bottom copyright */}
-      
     </footer>
   );
 };

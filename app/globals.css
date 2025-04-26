@@ -1,51 +1,251 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --footer-bg:#C2C2C2;
-  --border:#6a6969;
-  --product: #333333;
-  --text-contact:#C7C7C7;
-  --inputbg:#DCDCDC;
+@layer base {
+  :root {
+    /* Shadcn UI variables */
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 210 100% 45%; /* Corporate blue */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 142.1 76.2% 56.1%; /* Corporate green */
+    --secondary-foreground: 355.7 100% 97.3%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 100% 45%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 142.1 76.2% 56.1%;
+    --secondary-foreground: 222.2 47.4% 1.2%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
 }
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Corporate color palette */
+:root{
+  /* Primary colors */
+  --primary-color: #0F7AD7; /* Corporate blue */
+  --secondary-color: #3BE76B; /* Corporate green */
+  --accent-color: #F2994A; /* Accent orange */
+
+  /* Text colors */
+  --text-primary: #1E1E1E;
+  --text-secondary: #4F4F4F;
+  --text-light: #FFFFFF;
+
+  /* Background colors */
+  --background-light: #FFFFFF;
+  --background-dark: #1E1E1E;
+  --background-muted: #F9F9F9;
+  --background-accent: #F2F6FC; /* Light blue background */
+
+  /* UI elements */
+  --footer-bg: #F5F5F5;
+  --border-color: #E0E0E0;
+  --product-bg: #0F7AD7; /* Same as primary */
+  --text-muted: #757575;
+  --input-bg: #F8F8F8;
+
+  /* Feedback colors */
+  --success: #27AE60;
+  --error: #EB5757;
+  --warning: #F2C94C;
+
+  /* Shadow styles */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+
+  /* Typography */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-md: 1.125rem;  /* 18px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-2xl: 2rem;     /* 32px */
+  --font-size-3xl: 2.5rem;   /* 40px */
+  --font-size-4xl: 3rem;     /* 48px */
+
+  /* Spacing */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4rem;     /* 64px */
+
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+
+  /* Maintain backward compatibility with existing code */
+  --footer-bg: #F5F5F5;
+  --border: #E0E0E0;
+  --product: #0F7AD7;
+  --text-contact: #E0E0E0;
+  --inputbg: #F8F8F8;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--background-light);
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Class-based typography */
 .nunito {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-
   font-style: normal;
 }
 
 .poppins {
   font-family: "Poppins", sans-serif;
- 
   font-style: normal;
 }
 
-/* hoem page */
+/* Gradients */
 .gradient-text {
-  background: linear-gradient(90deg, #3BE76B 0%, #218AFA 100%);
+  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+.gradient-bg {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
 
+/* Card & container styles */
+.card {
+  @apply bg-white rounded-lg border border-border shadow-sm overflow-hidden transition-all duration-300;
+}
 
-.text-content {
-  text-align: justify;
-  word-spacing: -1px; /* Adjust this value as needed */
+.card:hover {
+  @apply shadow-md;
+}
+
+.section-container {
+  @apply container mx-auto px-4 py-8 md:px-8 md:py-16;
+}
+
+/* Corporate styling for hero sections */
+.corporate-hero {
+  @apply relative overflow-hidden;
+}
+
+.corporate-hero::after {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-transparent to-gray-900 opacity-90;
+  z-index: -1;
+}
+
+/* Style for corporate banner overlay */
+.banner-overlay {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(15, 122, 215, 0.8) 100%);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-6 rounded-md transition-all;
+}
+
+.btn-secondary {
+  @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-2 px-6 rounded-md transition-all;
+}
+
+.btn-outline {
+  @apply border-2 border-white text-white hover:bg-white/10 font-medium py-2 px-6 rounded-md transition-all;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  :root {
+    --font-size-4xl: 2rem;
+    --font-size-3xl: 1.75rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-xl: 1.25rem;
+  }
 }
