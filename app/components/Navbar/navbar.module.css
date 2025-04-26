@@ -1,0 +1,33 @@
+.navbarFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.navbarScrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbarTransparent {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.hiddenNav {
+  transform: translateY(-100%);
+}
+
+/* Add smooth transitions for dropdown menus */
+.dropdownTransition {
+  transition: opacity 0.2s ease, transform 0.2s ease, max-height 0.2s ease;
+}

@@ -13,16 +13,41 @@ import logo from '../../images/logo.png';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [hideNav, setHideNav] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
-  // Listen for scroll events
+  // Enhanced scroll event handler
   useEffect(() => {
-    const handleScroll = () => {
+    // Check initial scroll position
+    const checkScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    window.addEventListener("scroll", handleScroll);
+
+    // Initialize on mount
+    checkScroll();
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Determine if we should hide or show navbar based on scroll direction
+      if (currentScrollY > lastScrollY && currentScrollY > 300) {
+        // Scrolling down & past threshold - hide navbar
+        setHideNav(true);
+      } else {
+        // Scrolling up or at top - show navbar
+        setHideNav(false);
+      }
+
+      setLastScrollY(currentScrollY);
+      setIsScrolled(currentScrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Clean up
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -33,10 +58,18 @@ const Navbar = () => {
   };
 
   return (
-    <header className={cn(
-      "sticky top-0 z-40 w-full transition-all duration-300",
-      isScrolled ? "bg-white shadow-md" : ""
-    )}>
+    <header
+      className={cn(
+        "sticky top-0 z-40 w-full transition-all duration-300",
+        isScrolled
+          ? "bg-white shadow-md"
+          : "bg-transparent",
+        hideNav && !isMenuOpen
+          ? "transform -translate-y-full"
+          : "transform translate-y-0"
+      )}
+      style={{ transitionProperty: "transform, background-color, box-shadow" }}
+    >
       {/* Top contact bar */}
       <div className="bg-primary text-white py-2 px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
@@ -51,13 +84,22 @@ const Navbar = () => {
 
       {/* Main navbar */}
       <div className={cn(
-        "container mx-auto flex items-center justify-between py-4 px-4",
+        "container mx-auto flex items-center justify-between px-4 transition-all duration-300",
         isScrolled ? "py-2" : "py-4"
       )}>
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center space-x-2">
-            <Image src={logo} alt="EstellaEcoCarbon Logo" width={150} height={70} className="h-12 w-auto" />
+            <Image
+              src={logo}
+              alt="EstellaEcoCarbon Logo"
+              width={150}
+              height={70}
+              className={cn(
+                "h-12 w-auto transition-all duration-300",
+                isScrolled ? "h-10" : "h-12"
+              )}
+            />
           </div>
         </Link>
 
@@ -272,7 +314,7 @@ const Navbar = () => {
                 SERVICES
               </Link>
             </li>
-            <li className="pb-2">
+            <li>
               <Link
                 href="/contact"
                 className="block text-gray-800 py-2"
@@ -284,13 +326,10 @@ const Navbar = () => {
           </ul>
 
           <div className="mt-8">
-            <Link
-              href="/contact"
-              onClick={toggleMenu}
-            >
-              <button className="w-full bg-primary hover:bg-primary-600 text-white py-3 rounded-md font-medium transition-colors">
+            <Link href="/contact" onClick={toggleMenu}>
+              <Button className="w-full bg-primary hover:bg-primary-600 text-white py-3 rounded-md font-medium transition-colors">
                 Get a Quote
-              </button>
+              </Button>
             </Link>
           </div>
         </nav>
