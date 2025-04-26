@@ -27,16 +27,16 @@ const config: Config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          50: "#E5F2FB",
-          100: "#CCE4F7",
-          200: "#99CAEF",
-          300: "#66AFE7",
-          400: "#3395DF",
-          500: "#0F7AD7", // Our corporate primary blue
-          600: "#0C62AC",
-          700: "#094981",
-          800: "#063157",
-          900: "#03182C",
+          50: "#F5F5F5",
+          100: "#E0E0E0",
+          200: "#C2C2C2",
+          300: "#A3A3A3",
+          400: "#858585",
+          500: "#000000", // Our corporate primary black
+          600: "#1A1A1A",
+          700: "#333333",
+          800: "#4D4D4D",
+          900: "#666666",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

@@ -71,7 +71,7 @@ const Navbar = () => {
       style={{ transitionProperty: "transform, background-color, box-shadow" }}
     >
       {/* Top contact bar */}
-      <div className="bg-primary text-white py-2 px-4 flex justify-between items-center">
+      <div className="bg-black text-white py-2 px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <MapPin size={18} className="text-secondary" />
           <span className="text-sm font-medium">Banglore, Karnataka</span>

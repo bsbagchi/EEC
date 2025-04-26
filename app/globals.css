@@ -24,8 +24,8 @@
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 210 100% 45%; /* Corporate blue */
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 0%; /* Corporate black */
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 142.1 76.2% 56.1%; /* Corporate green */
     --secondary-foreground: 355.7 100% 97.3%;
@@ -60,8 +60,8 @@
     --card: 224 71% 4%;
     --card-foreground: 213 31% 91%;
 
-    --primary: 210 100% 45%;
-    --primary-foreground: 222.2 47.4% 1.2%;
+    --primary: 0 0% 0%; /* Corporate black */
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 142.1 76.2% 56.1%;
     --secondary-foreground: 222.2 47.4% 1.2%;
@@ -88,7 +88,7 @@
 /* Corporate color palette */
 :root{
   /* Primary colors */
-  --primary-color: #0F7AD7; /* Corporate blue */
+  --primary-color: #000000; /* Corporate black */
   --secondary-color: #3BE76B; /* Corporate green */
   --accent-color: #F2994A; /* Accent orange */
 
@@ -101,12 +101,12 @@
   --background-light: #FFFFFF;
   --background-dark: #1E1E1E;
   --background-muted: #F9F9F9;
-  --background-accent: #F2F6FC; /* Light blue background */
+  --background-accent: #F5F5F5; /* Light gray background */
 
   /* UI elements */
   --footer-bg: #F5F5F5;
   --border-color: #E0E0E0;
-  --product-bg: #0F7AD7; /* Same as primary */
+  --product-bg: #000000; /* Same as primary */
   --text-muted: #757575;
   --input-bg: #F8F8F8;
 
