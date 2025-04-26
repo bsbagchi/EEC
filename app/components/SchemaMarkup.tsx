@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from 'next/head';
+import Script from 'next/script';
 
 interface OrganizationSchemaProps {
   name?: string;
@@ -55,12 +56,13 @@ export const OrganizationSchema = ({
   };
 
   return (
-    <Head>
-      <script
+    <>
+      <Script
+        id="organization-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-    </Head>
+    </>
   );
 };
 
@@ -105,12 +107,13 @@ export const ProductSchema = ({
   };
 
   return (
-    <Head>
-      <script
+    <>
+      <Script
+        id="product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-    </Head>
+    </>
   );
 };
 
@@ -134,11 +137,12 @@ export const BreadcrumbSchema = ({ items }: BreadcrumbSchemaProps) => {
   };
 
   return (
-    <Head>
-      <script
+    <>
+      <Script
+        id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-    </Head>
+    </>
   );
 };

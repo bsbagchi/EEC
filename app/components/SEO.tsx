@@ -1,7 +1,11 @@
 'use client';
 
-import { NextSeo } from 'next-seo';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
+
+// Using dynamic import to avoid TypeScript errors if the package isn't installed yet
+// This needs to be replaced by proper import after installing the package
+const NextSeo = dynamic(() => import('next-seo').then(mod => mod.NextSeo), { ssr: false });
 
 interface SEOProps {
   title: string;

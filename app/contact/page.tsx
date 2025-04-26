@@ -48,7 +48,7 @@ export default function ContactPage() {
               <div className="container mx-auto px-4 md:px-6">
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
                 <p className="text-xl text-white/80 max-w-2xl">
-                  We're here to help with all your activated carbon needs. Reach out to our team today.
+                  We&apos;re here to help with all your activated carbon needs. Reach out to our team today.
                 </p>
               </div>
             </div>

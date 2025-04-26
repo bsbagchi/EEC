@@ -109,7 +109,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: `${product.name} | CG Carbon`,
       description: product.description,
-      type: 'product',
+      type: 'website', // Changed from 'product' to 'website' to match valid OpenGraph types
       images: [
         {
           url: product.bannerImage,

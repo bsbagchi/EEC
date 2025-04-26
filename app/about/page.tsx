@@ -4,7 +4,7 @@ import { CheckCircle2, Award, Users, Leaf, Shield, FileCheck } from 'lucide-reac
 import { Metadata } from 'next';
 import HeroBanner from '../components/HeroBanner';
 import aboutBanner from '../images/aboutimag.png';
-import aboutImage1 from '../images/home/EEC.JPG';
+import aboutImage from '../images/logo.png'; // Temporary replacement
 import { OrganizationSchema, BreadcrumbSchema } from '../components/SchemaMarkup';
 
 export const metadata: Metadata = {
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 Founded on the principles of innovation and sustainability, CG Carbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
               </p>
               <p className="text-gray-600">
-                At CG Carbon, we believe in creating products that not only solve our clients' purification needs but also contribute to a healthier planet. Our commitment to sustainability drives every aspect of our business, from sourcing raw materials to manufacturing processes.
+                At CG Carbon, we believe in creating products that not only solve our clients&apos; purification needs but also contribute to a healthier planet. Our commitment to sustainability drives every aspect of our business, from sourcing raw materials to manufacturing processes.
               </p>
 
               <div className="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
             <div className="w-full lg:w-1/2">
               <Image
-                src={aboutImage1}
+                src={aboutImage} // Using the replacement image
                 alt="CG Carbon Facility"
                 className="rounded-lg shadow-lg"
                 width={600}
@@ -103,7 +103,7 @@ export default function AboutPage() {
               </p>
               <div className="mt-6 border-t border-gray-100 pt-6">
                 <p className="text-gray-600 italic">
-                  "We envision a world where our sustainable purification solutions create safer environments and healthier communities."
+                  &quot;We envision a world where our sustainable purification solutions create safer environments and healthier communities.&quot;
                 </p>
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
               </p>
               <div className="mt-6 border-t border-gray-100 pt-6">
                 <p className="text-gray-600 italic">
-                  "Every day we strive to combine innovation with environmental responsibility in our pursuit of excellence."
+                  &quot;Every day we strive to combine innovation with environmental responsibility in our pursuit of excellence.&quot;
                 </p>
               </div>
             </div>
